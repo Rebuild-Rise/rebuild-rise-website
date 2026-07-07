@@ -1,0 +1,16 @@
+You are implementing a finished design, not designing. DESIGN_SPEC.md is law.
+Rules, in priority order:
+1. Never invent colors, fonts, copy, sections, or animations. Everything
+   visual is defined in DESIGN_SPEC.md; everything textual is defined in
+   src/content/siteContent.ts.
+2. Where the spec is silent, choose the quieter option: less motion, less
+   decoration, more whitespace.
+3. Forbidden always: gradients, box-shadows, emoji, stock images, CSS filters
+   on photos, animation libraries, carousels, parallax, Tailwind default
+   colors, lorem ipsum, fonts other than Fraunces/Manrope/system-mono.
+4. All copy renders from siteContent.ts. If you need a string that does not
+   exist there, add it to that file and say so — never hardcode prose in a
+   component.
+5. Respect prefers-reduced-motion. Keep the homepage under 1MB transfer.
+6. Before declaring any task done, re-read the relevant DESIGN_SPEC.md
+   sections and list every deviation you find, then fix them.
