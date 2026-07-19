@@ -114,15 +114,18 @@ The ampersand in "Rebuild & Rise" is always set in Fraunces.
 where the card links somewhere): border-color darkens, `translateY(-2px)`,
 200ms ease.
 
-**CaptionedPhoto** — the ONLY way photos appear on the site. Structure:
+**CaptionedPhoto** — the standard treatment for compact archive figures. Structure:
 `next/image` (radius 14 top corners) + caption strip (ivory bg, 10px 14px
 padding, flex space-between): left = place name, Manrope 500 forest; right =
 mono stamp e.g. `Abuja · 2022 · archive`, ink-muted. Full radius 14 on the
-outer wrapper, 1px line border.
+outer wrapper, 1px line border. Art-directed open figures such as the Hero
+documentary record and representative Model plates carry their captions
+externally and follow their ledger-specific composition instead.
 
-**ArchiveStrip** — hero footer element: 3 archive thumbnails 72px tall, radius
-8px, in a row with the caption "Abuja, 2022 — where our story began ↓" (small,
-cream-muted). Anchors to `#story`.
+**Hero documentary record** — the hero's single archive photograph remains at
+its natural 4:3 ratio with no overlay, crop, filter, or rounded container. Its
+external annotation names the scene, dates it as founders’ prior relief work,
+and explicitly states that it is not Pilot 001 or current impact.
 
 **LessonCard** — ivory card; quote in Fraunces 500 (h3 size), first-person past
 tense, wrapped in quotation marks; below, an arrow line in walnut small text:
@@ -133,8 +136,9 @@ on the root line + step name (Fraunces 500) + one-sentence description
 (small, ink-muted). Steps born from a 2022 lesson (`lessonBorn: true` in
 content) render their node in walnut.
 
-**PillarCard** — ivory card with a 3px top border in the pillar's accent color
-(forest / olive / walnut / leaf), `border-radius: 0 0 14px 14px`.
+**Program directory row** — an open ruled link with a mono index, program
+title, concise description, and a functional destination label. No card
+container, accent stripe, or program illustration (superseded by ledger D40).
 
 **EmptyFrame** — a photo-sized frame with `1.5px dashed` olive border, radius
 14, parchment bg, centered caption: "Pilot 001 — photographs coming from the
@@ -147,9 +151,9 @@ on ivory — never a stock avatar.
 Icons: `lucide-react`, `strokeWidth={1.5}`, `currentColor`, 20–24px. No emoji,
 no icon fonts, no filled icons.
 
-## 7. Photo grammar (three states — enforce in code)
+## 7. Photo grammar (five states — enforce in code)
 
-Every image object in content has `treatment: "archive" | "texture" | "live"`.
+Every image object in content has `treatment: "archive" | "texture" | "live" | "illustration" | "representative"`.
 
 1. **archive** — files prefixed `archive-` in `/public/images`. Pre-graded;
    NEVER apply CSS filters on top. Must always render inside CaptionedPhoto
@@ -161,8 +165,12 @@ Every image object in content has `treatment: "archive" | "texture" | "live"`.
 3. **live** — reserved for current work: founder headshots now, Pilot 001
    photos later. When live photos exist they render in full color grade; the
    contrast with archive duotoning is intentional and must be preserved.
+4. **representative** — contextual stock or supplied photography approved
+   under D38–D39. It must carry an external credit and an explicit statement
+   that it is not Rebuild & Rise fieldwork. It may never be mixed into the
+   founders’ archive or described as Pilot 001 evidence.
 
-No stock photography under any circumstances. No images outside the manifest.
+No unlabeled stock photography. No images outside the manifest.
 
 ## 8. Motion — exactly three, no libraries
 
@@ -185,8 +193,8 @@ renders visible and static. Test this.
 ## 9. Performance budget (hard limits)
 
 - Homepage total transfer ≤ 1MB on first load.
-- Images exclusively through `next/image` with correct `sizes`; hero has zero
-  images above the fold except ArchiveStrip thumbnails (~72px, low cost).
+- Images exclusively through `next/image` with correct `sizes`; the single hero
+  documentary record is priority-loaded at a width matched to its composition.
 - Fonts via `next/font` only (self-hosted, swap). No other third-party
   requests except the form endpoint on submit.
 - Targets: Lighthouse mobile ≥ 90 in all four categories; LCP < 2.5s on
@@ -207,10 +215,16 @@ renders visible and static. Test this.
 
 1. **Header** — cream, logo left, nav, primary CTA "Partner with us".
    Mobile: full-screen menu, CTA visible inside.
-2. **Hero** (`#top`) — forest bg. Eyebrow, display headline, subhead
-   (max 44ch), primary + secondary buttons, trust line, ArchiveStrip.
-   No hero photo. Typographic identity is the point.
-3. **Who we serve** (`#serve`) — cream. Eyebrow, h2, intro, 3 cards.
+2. **Hero** (`#top`) — a compact forest report masthead followed by an open
+   ivory documentary record. Desktop pairs thesis with summary, honest current
+   status, one primary button, and one quiet text link; the natural 4:3 archive
+   photograph overlaps the masthead edge and carries a separate provenance
+   margin. Mobile reads thesis → photograph and caption → summary, status, and
+   actions. No text or effect crosses the people in the image.
+3. **Who we serve** (`#serve`) — cream. Eyebrow, h2, intro, then three
+   numbered relational rows: audience title and concise barrier description,
+   separated by fine rules. No cards, icons, illustrations, or reserved art
+   columns.
 4. **Where we come from** (`#story`) — cream → parchment transition. Eyebrow,
    h2, story paragraph, 2 CaptionedPhotos (grid 1.3fr/1fr; stacked mobile),
    then 3 LessonCards under "What it taught us".
@@ -218,7 +232,8 @@ renders visible and static. Test this.
    opacity as bg. The root line visually begins beneath the lesson cards.
    H2 "Three lessons became seven steps." Seven ModelSteps along the line
    (horizontal path desktop, vertical mobile). Closing line from content.
-6. **Program pillars** (`#programs`) — cream. 2×2 PillarCards (1 col mobile).
+6. **Program pillars** (`#programs`) — cream. Asymmetric ruled directory of
+   four links into the Program Areas working folios (stacked on mobile).
 7. **Where we are** (`#now`) — ivory band. Pilot 001 framework (6 numbered
    steps, small), measurement commitments (3 items), photo-ethics line,
    FounderCards (2), registration line, and the EmptyFrame.
@@ -229,7 +244,7 @@ renders visible and static. Test this.
 
 ## 12. Forbidden
 
-Gradients · box-shadows · emoji · stock photos · CSS filters on photos ·
+Gradients · box-shadows · emoji · unlabeled stock photos · filters on archive photos ·
 animation libraries · parallax · carousels/sliders · Tailwind default colors ·
 fonts beyond Fraunces/Manrope/system-mono · lorem ipsum (all copy exists in
 the content file) · "Donate now" as the primary CTA · decorative African

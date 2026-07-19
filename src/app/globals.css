@@ -1,26 +1,515 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-forest: #19351f;
+  --color-forest-deep: #122616;
+  --color-root: #243f2a;
+  --color-olive: #7c8a58;
+  --color-leaf: #a1aa78;
+  --color-walnut: #5b3818;
+  --color-cream: #f7f1e5;
+  --color-parchment: #efe8d6;
+  --color-ivory: #fffcf4;
+  --color-ink: #1e2a1f;
+  --color-ink-muted: #6d685c;
+  --color-line: #e4dcc9;
+  --color-cream-muted: #c9cdb4;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-forest: var(--color-forest);
+  --color-forest-deep: var(--color-forest-deep);
+  --color-root: var(--color-root);
+  --color-olive: var(--color-olive);
+  --color-leaf: var(--color-leaf);
+  --color-walnut: var(--color-walnut);
+  --color-cream: var(--color-cream);
+  --color-parchment: var(--color-parchment);
+  --color-ivory: var(--color-ivory);
+  --color-ink: var(--color-ink);
+  --color-ink-muted: var(--color-ink-muted);
+  --color-line: var(--color-line);
+  --color-cream-muted: var(--color-cream-muted);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-display: var(--font-fraunces), ui-serif, serif;
+  --font-sans: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, monospace;
+
+  --radius-button: 14px;
+  --radius-card: 14px;
+  --radius-photo: 14px;
+  --radius-thumb: 8px;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-olive);
+  outline-offset: 2px;
+}
+
+/* Ledger S1 — highlighting reads like a marker on a field journal. */
+::selection {
+  background-color: var(--color-forest);
+  color: var(--color-cream);
+}
+
+.bg-forest ::selection,
+.bg-forest-deep ::selection {
+  background-color: var(--color-cream);
+  color: var(--color-forest);
+}
+
+/* Hanging opening quote on lesson quotes (brief: typographic craft). */
+.rr-hquote {
+  text-indent: -0.45em;
+  hanging-punctuation: first;
+}
+
+/* A shared editorial display scale keeps long headings commanding without
+   allowing them to become full-screen posters. Viewport height participates in
+   the preferred size so short laptop screens retain the same visual balance. */
+.rr-title-page {
+  font-size: clamp(2.625rem, min(calc(1.5rem + 3.5vw), 10svh), 5rem);
+  line-height: 0.96;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+
+.rr-title-home {
+  font-size: clamp(2.625rem, min(calc(2rem + 2.5vw), 9svh), 4.25rem);
+  line-height: 0.98;
+  letter-spacing: -0.02em;
+}
+
+.rr-title-section {
+  font-size: clamp(1.875rem, min(calc(1.5rem + 1.25vw), 7svh), 3rem);
+  line-height: 1.04;
+  text-wrap: balance;
+}
+
+.rr-title-chapter {
+  font-size: clamp(2.125rem, min(calc(1.5rem + 2vw), 7.5svh), 3.5rem);
+  line-height: 1.01;
+  text-wrap: balance;
+}
+
+.rr-title-item {
+  font-size: clamp(1.5rem, calc(1.25rem + 0.75vw), 2rem);
+  line-height: 1.08;
+  text-wrap: balance;
+}
+
+.rr-title-final {
+  font-size: clamp(2.625rem, min(calc(2rem + 2.25vw), 9svh), 4.5rem);
+  line-height: 0.96;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+
+/* D39 — Representative Model photography keeps every person and environment
+   intact. Reversible, image-specific grading brings three different sources
+   into one restrained editorial register without pretending they are archive
+   photographs. */
+.rr-photo-grade--consultation {
+  filter: brightness(0.9) contrast(0.96) saturate(0.74) sepia(0.035);
+}
+
+.rr-photo-grade--workshop {
+  filter: brightness(1.08) contrast(1.015) saturate(0.8) sepia(0.025);
+}
+
+.rr-photo-grade--gathering {
+  filter: brightness(0.97) contrast(0.985) saturate(0.94) sepia(0.018);
+}
+
+/* D46 — The inquiry photograph is supplied representative photography, not
+   field evidence. Its source is already strongly processed, so this reversible
+   grade settles saturation and highlight contrast without recoloring people. */
+.rr-photo-grade--correspondence {
+  filter: brightness(0.94) contrast(0.92) saturate(0.74) sepia(0.018);
+}
+
+/* The workshop source carries a blurred edge figure and unused wall. A small
+   optical crop concentrates the working hands while preserving the group. */
+.rr-representative-photo--workshop {
+  position: relative;
+  aspect-ratio: 5759 / 3794;
+}
+
+.rr-representative-photo--workshop img {
+  position: absolute;
+  inset: 0;
+  width: 110%;
+  height: 110%;
+  max-width: none;
+  object-fit: cover;
+  transform: translate(-6.5%, -4%);
+}
+
+.rr-working-folio__header,
+.rr-working-folio__field {
+  min-width: 0;
+}
+
+/* D48 — A Record in Three Movements. The compact declaration establishes the
+   thesis; the archive sequence then carries preparation, gathering, and
+   material evidence as three explicitly captioned records. */
+.rr-movements {
+  overflow: clip;
+}
+
+.rr-movements__masthead {
+  border-bottom: 1px solid color-mix(in srgb, var(--color-olive) 38%, transparent);
+}
+
+.rr-movements__declaration {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(18rem, 1fr);
+  align-items: end;
+  gap: clamp(2.5rem, 7vw, 7rem);
+  padding-block: clamp(2.75rem, 5.5vw, 4.75rem);
+}
+
+.rr-movements__title {
+  max-width: 8.5ch;
+  font-size: clamp(3.5rem, 4.4vw, 4rem);
+  line-height: 0.98;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+
+.rr-movements__purpose {
+  min-width: 0;
+}
+
+.rr-movements__paper {
+  padding-block: clamp(2rem, 4vw, 2.75rem) clamp(3.5rem, 7vw, 5rem);
+  background: var(--color-parchment);
+}
+
+.rr-movements__sequence {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(7.5rem, 0.12fr);
+  align-items: end;
+  gap: clamp(1rem, 2vw, 1.5rem);
+}
+
+.rr-movements__list {
+  display: grid;
+  grid-template-columns: 6fr 3fr 2fr;
+  align-items: end;
+  gap: clamp(1rem, 2vw, 1.5rem);
+  min-width: 0;
+}
+
+.rr-movements__movement,
+.rr-movements__movement figure,
+.rr-movements__movement figcaption,
+.rr-movements__status {
+  min-width: 0;
+}
+
+.rr-movements__movement-label {
+  display: flex;
+  gap: 0.65rem;
+  margin-bottom: 0.7rem;
+  color: var(--color-walnut);
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 0.6875rem;
+  line-height: 1.45;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.rr-movements__movement-label span {
+  color: var(--color-forest);
+}
+
+.rr-movements__movement:nth-child(1) .rr-movements__image {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.rr-movements__movement:nth-child(2) .rr-movements__image {
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+
+.rr-movements__movement:nth-child(3) .rr-movements__image {
+  aspect-ratio: 5 / 6;
+  object-fit: cover;
+}
+
+.rr-movements__movement figcaption {
+  display: grid;
+  gap: 0.35rem;
+  margin-top: 0.65rem;
+  padding-top: 0.65rem;
+  border-top: 1px solid color-mix(in srgb, var(--color-walnut) 35%, transparent);
+}
+
+.rr-movements__movement figcaption span {
+  overflow-wrap: anywhere;
+  color: var(--color-walnut);
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 0.625rem;
+  line-height: 1.5;
+}
+
+.rr-movements__status {
+  align-self: end;
+  padding-top: 1rem;
+  border-top: 1px solid color-mix(in srgb, var(--color-walnut) 35%, transparent);
+}
+
+.rr-movements__status-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.rr-movements__status-list li {
+  display: grid;
+  grid-template-columns: 0.35rem minmax(0, 1fr);
+  gap: 0.55rem;
+  align-items: baseline;
+  overflow-wrap: anywhere;
+}
+
+.rr-movements__status-list li::before {
+  width: 0.35rem;
+  height: 0.35rem;
+  background: var(--color-leaf);
+  border-radius: 50%;
+  content: "";
+}
+
+.rr-movements__provenance {
+  margin-top: clamp(1.5rem, 3vw, 2.25rem);
+  padding-top: 1rem;
+  border-top: 1px solid color-mix(in srgb, var(--color-walnut) 26%, transparent);
+}
+
+/* The archive changes grid before the declaration changes reading order. */
+@media (max-width: 1100px) {
+  .rr-movements__purpose {
+    max-width: 48rem;
+  }
+
+  .rr-movements__sequence {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .rr-movements__list {
+    grid-template-columns: 4fr 2fr;
+  }
+
+  .rr-movements__movement:nth-child(3) {
+    width: 58%;
+  }
+
+  .rr-movements__status {
+    width: min(100%, 34rem);
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .rr-movements__declaration {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.75rem;
+    padding-block: 2.5rem 2.75rem;
+  }
+
+  .rr-movements__title {
+    max-width: 9ch;
+    font-size: clamp(2.5rem, 12vw, 2.75rem);
+  }
+
+  .rr-movements__list {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2rem;
+  }
+
+  .rr-movements__movement:nth-child(2) {
+    width: 68%;
+    margin-left: auto;
+  }
+
+  .rr-movements__movement:nth-child(3) {
+    width: 52%;
+    align-self: flex-start;
+  }
+
+  .rr-movements__status {
+    width: 100%;
+  }
+}
+
+@media (max-width: 380px) {
+  .rr-movements__declaration {
+    padding-block: 2.15rem 2.4rem;
+  }
+
+  .rr-movements__actions {
+    margin-top: 1.25rem;
+  }
+}
+
+@media print {
+  .rr-movements__masthead {
+    color: var(--color-ink) !important;
+    background: #fff !important;
+  }
+
+  .rr-movements__masthead * {
+    color: var(--color-ink) !important;
+  }
+
+  .rr-movements__movement,
+  .rr-movements__status,
+  .rr-movements__provenance {
+    break-inside: avoid;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .motion-reveal {
+    opacity: 0;
+    transform: translateY(16px);
+    transition:
+      opacity 500ms cubic-bezier(0.22, 1, 0.36, 1),
+      transform 500ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .motion-reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .motion-m3-button {
+    transition:
+      background-color 180ms ease,
+      border-color 180ms ease;
+  }
+
+  .motion-m3-card {
+    transition:
+      border-color 200ms ease-in-out,
+      transform 200ms ease-in-out;
+  }
+
+  .motion-m3-card:hover {
+    transform: translateY(-2px);
+  }
+
+  /* A model node pulses once as the Path tip reaches it (ledger D7). */
+  .rr-pulse {
+    animation: rr-node-pulse 900ms cubic-bezier(0.22, 1, 0.36, 1) 1;
+  }
+
+  @keyframes rr-node-pulse {
+    0% {
+      transform: scale(1);
+    }
+    45% {
+      transform: scale(1.6);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Ledger S3 — the field-journal print pass: a funder printing this page
+   gets legible ink on paper, complete content, and no decorative chrome. */
+@media print {
+  * {
+    color: var(--color-ink) !important;
+  }
+
+  body {
+    background: #fff;
+  }
+
+  .rr-journey,
+  .rr-soil-print-hide,
+  header nav,
+  header a[href] + div,
+  header button {
+    display: none !important;
+  }
+
+  .motion-reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  [class*="rr-photo-grade--"] {
+    filter: none !important;
+  }
+
+  .rr-representative-photo--workshop img {
+    position: static;
+    width: 100%;
+    height: auto;
+    transform: none;
+  }
+
+  .rr-inquiry-figure,
+  .rr-inquiry-desk {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .rr-working-folio {
+    break-before: page;
+    page-break-before: always;
+    break-inside: auto;
+    padding-block: 0.35in !important;
+    background: #fff !important;
+  }
+
+  .rr-working-folio__header {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    break-after: avoid-page;
+    page-break-after: avoid;
+  }
+
+  .rr-working-folio__field {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    background: #fff !important;
+  }
+
+  .rr-working-folio p {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .rr-program-commitments {
+    break-before: page;
+    page-break-before: always;
+  }
 }
