@@ -2,11 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
-import { InquiryForm } from "@/components/forms";
 import { InteriorShell } from "@/components/interior";
 import { Button, Section, SectionEyebrow } from "@/components/ui";
 import {
-  footer,
   getInvolvedPage,
   images,
 } from "@/content/siteContent";
@@ -29,28 +27,9 @@ const processOffsets = [
   "lg:mt-24",
 ];
 
-const inquiryPathways = getInvolvedPage.pathways.entries.filter(
-  (pathway) => !("external" in pathway && pathway.external),
-);
-
-export default async function GetInvolvedPage({
-  searchParams,
-}: {
-  searchParams: Promise<{ path?: string | string[] }>;
-}) {
-  const requestedPath = (await searchParams).path;
-  const initialPath =
-    typeof requestedPath === "string" &&
-    inquiryPathways.some(
-      (pathway) => pathway.value === requestedPath,
-    )
-      ? requestedPath
-      : undefined;
+export default function GetInvolvedPage() {
   const closingImage =
     images[getInvolvedPage.close.image as keyof typeof images];
-  const inquiryImage =
-    images[getInvolvedPage.form.image as keyof typeof images];
-  const formEndpoint = process.env.NEXT_PUBLIC_FORM_ENDPOINT;
 
   return (
     <InteriorShell>
@@ -184,117 +163,6 @@ export default async function GetInvolvedPage({
             </li>
           ))}
         </ol>
-      </Section>
-
-      <Section
-        background="ivory"
-        pad="roomy"
-        aria-labelledby="inquiry-heading"
-      >
-        <div className="grid gap-8 lg:grid-cols-12 lg:items-end">
-          <div className="lg:col-span-5">
-            <SectionEyebrow>{getInvolvedPage.form.eyebrow}</SectionEyebrow>
-            <h2
-              id="inquiry-heading"
-              className="rr-title-section mt-4 max-w-[12ch] font-display font-medium text-ink"
-            >
-              {getInvolvedPage.form.heading}
-            </h2>
-          </div>
-          <div className="lg:col-start-8 lg:col-span-5">
-            <p className="max-w-[50ch] font-sans text-base leading-[1.75] text-ink-muted">
-              {getInvolvedPage.form.intro}
-            </p>
-            {formEndpoint ? (
-              <p className="mt-5 font-mono text-[0.6875rem] text-walnut">
-                {getInvolvedPage.form.requiredNote}
-              </p>
-            ) : null}
-          </div>
-        </div>
-
-        <div className="mt-12 grid gap-12 border-y border-line py-8 md:py-10 lg:grid-cols-12 lg:gap-x-10 lg:gap-y-0">
-          <figure
-            className={`rr-inquiry-figure ${formEndpoint ? "lg:col-span-5" : "lg:col-span-7"}`}
-          >
-            <div className="overflow-hidden bg-parchment">
-              <Image
-                src={inquiryImage.src}
-                alt={inquiryImage.alt}
-                width={inquiryImage.width}
-                height={inquiryImage.height}
-                sizes={
-                  formEndpoint
-                    ? "(max-width: 1024px) 100vw, 460px"
-                    : "(max-width: 1024px) 100vw, 650px"
-                }
-                loading="eager"
-                className={`h-auto w-full ${inquiryImage.grade ? `rr-photo-grade--${inquiryImage.grade}` : ""}`}
-              />
-            </div>
-            <figcaption className="mt-3 flex justify-end border-t border-line pt-3">
-              {inquiryImage.sourceUrl ? (
-                <Link
-                  href={inquiryImage.sourceUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="font-mono text-[0.6875rem] text-right text-walnut underline decoration-line underline-offset-4 hover:text-forest"
-                >
-                  {inquiryImage.stamp}
-                </Link>
-              ) : (
-                <span className="font-mono text-[0.6875rem] text-right text-walnut">
-                  {inquiryImage.stamp}
-                </span>
-              )}
-            </figcaption>
-          </figure>
-
-          <div
-            id={getInvolvedPage.form.id}
-            className={`rr-inquiry-desk scroll-mt-6 sm:scroll-mt-8 ${formEndpoint ? "lg:col-start-6 lg:col-span-7" : "lg:col-span-5"}`}
-          >
-            <InquiryForm
-              key={initialPath ?? "unselected"}
-              copy={getInvolvedPage.form}
-              pathways={inquiryPathways}
-              endpoint={formEndpoint}
-              initialPath={initialPath}
-              email={footer.email}
-            />
-
-            <aside className="mt-10 border-t border-line pt-7">
-              <SectionEyebrow>
-                {getInvolvedPage.form.preparation.eyebrow}
-              </SectionEyebrow>
-              <h3 className="mt-3 max-w-[18ch] font-display text-[1.65rem] font-medium leading-[1.12] text-ink">
-                {getInvolvedPage.form.preparation.heading}
-              </h3>
-              <ol className="mt-6 border-b border-line">
-                {getInvolvedPage.form.preparation.entries.map(
-                  (entry, index) => (
-                    <li
-                      key={entry.title}
-                      className="grid grid-cols-[2rem_1fr] gap-3 border-t border-line py-4"
-                    >
-                      <span className="font-mono text-[0.6875rem] text-walnut">
-                        {String(index + 1).padStart(2, "0")}
-                      </span>
-                      <div>
-                        <h4 className="font-sans text-sm font-medium text-ink">
-                          {entry.title}
-                        </h4>
-                        <p className="mt-1 font-sans text-xs leading-[1.7] text-ink-muted">
-                          {entry.body}
-                        </p>
-                      </div>
-                    </li>
-                  ),
-                )}
-              </ol>
-            </aside>
-          </div>
-        </div>
       </Section>
 
       <Section background="forest" pad="roomy">

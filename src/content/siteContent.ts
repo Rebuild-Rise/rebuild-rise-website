@@ -259,7 +259,7 @@ export const nav = {
     { label: "Our model", href: "/model" },
     { label: "Program areas", href: "/programs" },
     { label: "Get involved", href: "/get-involved" },
-    { label: "Contact", href: "/get-involved#inquiry" },
+    { label: "Contact", href: "/contact" },
   ],
   footerLinks: [
     { label: "About", href: "/about" },
@@ -269,7 +269,7 @@ export const nav = {
   ],
   cta: {
     label: "Partner with us",
-    href: "/get-involved?path=partner#inquiry",
+    href: "/contact?path=partner#inquiry",
   },
 };
 
@@ -285,7 +285,7 @@ export const hero = {
   primaryCta: { label: "Explore our model", href: "#model" },
   secondaryCta: {
     label: "Partner with us",
-    href: "/get-involved?path=partner#inquiry",
+    href: "/contact?path=partner#inquiry",
   },
   documentary: {
     imageKey: "communityWomen",
@@ -776,7 +776,7 @@ export const modelPage = {
     heading: "See where the model could be applied.",
     body: "The four program areas describe possible fields of work for future pilots. They do not describe services currently in delivery.",
     primaryCta: { label: "Explore program areas", href: "/programs" },
-    secondaryCta: { label: "Discuss a partnership", href: "/get-involved?path=partner#inquiry" },
+    secondaryCta: { label: "Discuss a partnership", href: "/contact?path=partner#inquiry" },
   },
 };
 
@@ -864,7 +864,7 @@ export const programsPage = {
     heading: "A pilot begins with a specific need.",
     body: "Pilot 001 will be scoped around community listening, local partnership, safeguards, and a realistic learning plan. It will not be presented as four programs delivered at once.",
     primaryCta: { label: "Read our model", href: "/model" },
-    secondaryCta: { label: "Discuss a partnership", href: "/get-involved?path=partner#inquiry" },
+    secondaryCta: { label: "Discuss a partnership", href: "/contact?path=partner#inquiry" },
   },
 };
 
@@ -906,7 +906,7 @@ export const getInvolvedPage = {
         contribution: "Share community priorities, local context, referral options, or practical capacity that could inform a focused pilot.",
         commitment: "We will listen first and clarify fit, safeguarding, referral responsibilities, and follow-up before any collaboration is confirmed.",
         next: "Your inquiry begins a conversation about fit. It does not confirm a partnership or delivery role.",
-        cta: { label: "Inquire as a partner", href: "/get-involved?path=partner#inquiry" },
+        cta: { label: "Inquire as a partner", href: "/contact?path=partner#inquiry" },
       },
       {
         value: "anchor",
@@ -915,7 +915,7 @@ export const getInvolvedPage = {
         contribution: "Share local knowledge, identify existing community structures, or explore how a trusted local point of contact might support future communication and follow-up.",
         commitment: "We will be clear about the pilot’s stage and will not treat an inquiry as a confirmed role.",
         next: "If a relevant need develops, the team may contact you to learn more about your experience and local context.",
-        cta: { label: "Express interest", href: "/get-involved?path=anchor#inquiry" },
+        cta: { label: "Express interest", href: "/contact?path=anchor#inquiry" },
       },
       {
         value: "volunteer",
@@ -937,7 +937,7 @@ export const getInvolvedPage = {
         contribution: "Review a defined question, challenge assumptions, strengthen safeguards, or help shape practical measurement.",
         commitment: "We will be clear about the question, the evidence available, and the stage of work before requesting your involvement.",
         next: "If your experience matches a current question, the team may invite a focused conversation.",
-        cta: { label: "Offer professional advice", href: "/get-involved?path=advisor#inquiry" },
+        cta: { label: "Offer professional advice", href: "/contact?path=advisor#inquiry" },
       },
       {
         value: "supporter",
@@ -946,7 +946,7 @@ export const getInvolvedPage = {
         contribution: "Discuss what responsible support could look like once a pilot has a defined need, scope, and accountability approach.",
         commitment: "We will represent the work at its actual stage and will not make unsupported impact or outcome claims.",
         next: "This page starts a conversation. It does not process a donation, create a funding commitment, or make any claim about tax deductibility.",
-        cta: { label: "Discuss pilot support", href: "/get-involved?path=supporter#inquiry" },
+        cta: { label: "Discuss pilot support", href: "/contact?path=supporter#inquiry" },
       },
     ],
   },
@@ -1022,11 +1022,76 @@ export const getInvolvedPage = {
   },
 };
 
+export const contactPage = {
+  metadata: {
+    title: "Contact | Rebuild & Rise Humanitarian Initiative",
+    description:
+      "Choose the appropriate route for volunteer applications, structured inquiries, or general correspondence with Rebuild & Rise in Nigeria.",
+    canonical: "/contact",
+    openGraphTitle: "Contact Rebuild & Rise",
+  },
+  intro: {
+    eyebrow: "Contact & inquiries",
+    heading: "Start with the right conversation.",
+    body: "Different conversations need different routes. Choose the one that best describes why you are getting in touch, and share only the information needed for a first response.",
+    status: "Registered in Nigeria · Pilot 001 in design",
+  },
+  routes: {
+    eyebrow: "Choose a route",
+    entries: [
+      {
+        number: "01",
+        title: "Volunteer application",
+        body: "For people applying to contribute time, practical skills, or professional experience through the volunteer pathway.",
+        cta: "Open volunteer form",
+        href: "https://docs.google.com/forms/d/e/1FAIpQLSeFpbl2SsewFo6BopLof536XJFC_OCnRC9qlq585LLti7yngQ/viewform?pli=1",
+        external: true,
+      },
+      {
+        number: "02",
+        title: "Structured inquiry",
+        body: "For community or institutional partners, on-ground anchors, professional advisors, and pilot supporters.",
+        cta: "Continue to inquiry",
+        href: "#inquiry",
+        external: false,
+      },
+      {
+        number: "03",
+        title: "General correspondence",
+        body: "For questions, corrections, or messages that do not fit one of the defined participation pathways.",
+        cta: "Write by email",
+        href: "mailto:contact@rebuildandrise.ng",
+        external: false,
+      },
+    ],
+  },
+  inquiry: {
+    eyebrow: "Structured inquiry",
+    heading: "Give the conversation a clear starting point.",
+    intro: "Use this form when your message concerns a defined participation pathway. Selecting the closest route helps the team review context and respond responsibly.",
+    suitedEyebrow: "This form is for",
+    suited: [
+      "Community or institutional partners",
+      "On-ground anchors",
+      "Professional advisors",
+      "Pilot supporters",
+    ],
+  },
+  correspondence: {
+    eyebrow: "General correspondence",
+    heading: "Not every message needs an application.",
+    body: "If your message does not fit a structured pathway, write directly to the team. Please do not include medical information, details about children, identity documents, financial information, or other sensitive personal data.",
+    label: "Email the team",
+    email: "contact@rebuildandrise.ng",
+  },
+  form: getInvolvedPage.form,
+};
+
 export const notFoundPage = {
   metadataTitle: "Page not found | Rebuild & Rise",
   eyebrow: "404 · Page not found",
   heading: "This page does not exist.",
   body: "The address may be incomplete, or the page may have moved. Return to the homepage or contact the Rebuild & Rise team.",
   primaryCta: { label: "Return home", href: "/" },
-  secondaryCta: { label: "Contact the team", href: "/get-involved#inquiry" },
+  secondaryCta: { label: "Contact the team", href: "/contact" },
 };

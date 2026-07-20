@@ -466,7 +466,7 @@ representative-photography decision.
   `The four program areas describe possible fields of work for future pilots. They do not describe services currently in delivery.`
 
 - **Primary CTA:** `Explore program areas` → `/programs`
-- **Secondary CTA:** `Discuss a partnership` → `/get-involved?path=partner#inquiry`
+- **Secondary CTA:** `Discuss a partnership` → `/contact?path=partner#inquiry`
 
 **Sources:** ORG §6; SITE `pillars`; PLAN route architecture.
 
@@ -647,7 +647,7 @@ representative-photography decision.
   `Pilot 001 will be scoped around community listening, local partnership, safeguards, and a realistic learning plan. It will not be presented as four programs delivered at once.`
 
 - **Primary CTA:** `Read our model` → `/model`
-- **Secondary CTA:** `Discuss a partnership` → `/get-involved?path=partner#inquiry`
+- **Secondary CTA:** `Discuss a partnership` → `/contact?path=partner#inquiry`
 
 **Sources:** SITE `whereWeAre.body` and `whereWeAre.pilotSteps`; PLAN.
 
@@ -658,7 +658,7 @@ representative-photography decision.
 ## Metadata
 
 - **Title:** `Get involved | Rebuild & Rise Humanitarian Initiative`
-- **Description:** `Explore partnership, on-ground anchor, advisory, and pilot-support inquiries with Rebuild & Rise Humanitarian Initiative in Nigeria.`
+- **Description:** `Explore volunteer, partnership, on-ground anchor, advisory, and pilot-support pathways with Rebuild & Rise Humanitarian Initiative in Nigeria.`
 - **Canonical:** `https://rebuildandrise.ng/get-involved`
 - **Open Graph title:** `Get involved with Rebuild & Rise`
 - **Open Graph description:** Use the metadata description unchanged.
@@ -690,7 +690,7 @@ representative-photography decision.
 - **H2:** `Choose the route that fits.`
 - **Introduction:**
 
-  `Each route leads to one inquiry form. Select the closest fit so the team can understand why you are getting in touch.`
+  `Volunteer applicants continue to the dedicated application. Every other route leads to the inquiry form on the Contact page.`
 
 Use the same four public field labels for every route:
 
@@ -717,7 +717,7 @@ Use the same four public field labels for every route:
 
   `Your inquiry begins a conversation about fit. It does not confirm a partnership or delivery role.`
 
-- **CTA:** `Inquire as a partner` → `/get-involved?path=partner#inquiry`
+- **CTA:** `Inquire as a partner` → `/contact?path=partner#inquiry`
 
 **Sources:** ORG §5 and §6D; SITE `getInvolved.paths`; PLAN.
 
@@ -739,13 +739,18 @@ Use the same four public field labels for every route:
 
   `If a relevant need develops, the team may contact you to learn more about your experience and local context.`
 
-- **CTA:** `Express interest` → `/get-involved?path=anchor#inquiry`
+- **CTA:** `Express interest` → `/contact?path=anchor#inquiry`
 
 **Sources:** ORG §5 and §7; SITE `getInvolved.paths`; PLAN. Internal meeting
 notes about salary, time, supervision, expenses, eligibility, and placement
 are deliberately excluded.
 
-### 03 · Professional advisor
+### 03 · Volunteer applicant
+
+The volunteer route opens the organization-supplied Google Form in a new tab.
+It does not appear in the general inquiry dropdown.
+
+### 04 · Professional advisor
 
 - **Who this is for:**
 
@@ -763,11 +768,11 @@ are deliberately excluded.
 
   `If your experience matches a current question, the team may invite a focused conversation.`
 
-- **CTA:** `Offer professional advice` → `/get-involved?path=advisor#inquiry`
+- **CTA:** `Offer professional advice` → `/contact?path=advisor#inquiry`
 
 **Sources:** ORG §5–7; SITE `getInvolved.paths`; PLAN.
 
-### 04 · Pilot supporter
+### 05 · Pilot supporter
 
 - **Who this is for:**
 
@@ -785,7 +790,7 @@ are deliberately excluded.
 
   `This page starts a conversation. It does not process a donation, create a funding commitment, or make any claim about tax deductibility.`
 
-- **CTA:** `Discuss pilot support` → `/get-involved?path=supporter#inquiry`
+- **CTA:** `Discuss pilot support` → `/contact?path=supporter#inquiry`
 
 **Sources:** ORG §5; SITE `getInvolved.paths`; PLAN.
 
@@ -813,7 +818,10 @@ are deliberately excluded.
 **Sources:** ORG §5 and §7; PLAN. These steps describe the intended inquiry
 process and do not promise a response time or outcome.
 
-## Inquiry form
+## Contact-page inquiry form
+
+This form is rendered as the dominant action on `/contact`, not as a closing
+subsection of `/get-involved`.
 
 - **Anchor ID:** `inquiry`
 - **Eyebrow:** `Inquiry`
@@ -821,22 +829,6 @@ process and do not promise a response time or outcome.
 - **Introduction:**
 
   `Tell us which pathway fits and what you would like to explore. Please share only the information needed for this first conversation.`
-
-### Representative photograph
-
-- **Image key:** `contactCorrespondence`
-- **Literal alt text:** `A man in a patterned cap and a close group of children look toward the camera`
-- **Caption label:** `Representative photograph`
-- **Credit:** `Richard Badejo / Pexels · not Rebuild & Rise fieldwork`
-- **Public provenance statement:**
-
-  `This licensed photograph is representative. It does not depict Rebuild & Rise activity, participants, or impact.`
-
-- **Source:** `https://www.pexels.com/photo/a-man-and-young-boys-smiling-at-the-camera-5409261/`
-
-**Sources:** User-supplied licensed Pexels photograph; LEDGER D39's
-representative-photography boundary. No location, beneficiary status, or
-organizational relationship is assigned to anyone shown.
 
 ### Before you write
 
@@ -965,8 +957,8 @@ leave the pathway unselected and are never displayed or submitted.
 - `Our model` → `/model`
 - `Program areas` → `/programs`
 - `Get involved` → `/get-involved`
-- `Contact` → `/get-involved#inquiry`
-- **Header CTA:** `Partner with us` → `/get-involved?path=partner#inquiry`
+- `Contact` → `/contact`
+- **Header CTA:** `Partner with us` → `/contact?path=partner#inquiry`
 
 The footer uses the same four principal page labels. On `/get-involved`, only
 `Get involved` receives `aria-current="page"`; `Contact` remains an in-page
@@ -981,7 +973,11 @@ destination.
 
 ## `/contact`
 
-Permanent destination: `/get-involved#inquiry`. No standalone page copy.
+The standalone Contact page opens with `Start with the right conversation.` It
+routes volunteer applicants to the dedicated Google Form, defined partner and
+support inquiries to the native Formspree-backed inquiry form, and other
+messages to `contact@rebuildandrise.ng`. The inquiry form occupies the dominant
+eight-column field on desktop and appears before supporting guidance on mobile.
 
 ## Public 404 page
 
@@ -993,7 +989,7 @@ Permanent destination: `/get-involved#inquiry`. No standalone page copy.
   `The address may be incomplete, or the page may have moved. Return to the homepage or contact the Rebuild & Rise team.`
 
 - **Primary CTA:** `Return home` → `/`
-- **Secondary CTA:** `Contact the team` → `/get-involved#inquiry`
+- **Secondary CTA:** `Contact the team` → `/contact`
 
 **Sources:** PLAN route architecture; SITE `footer.email` and current brand
 voice. The 404 makes no organizational claim.
