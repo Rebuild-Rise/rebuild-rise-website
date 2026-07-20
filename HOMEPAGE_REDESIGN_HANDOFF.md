@@ -346,3 +346,10 @@ long because the interlude's lower padding compounded with the next section's
 top padding. Only the interlude's bottom clamp was tightened, from
 `clamp(4rem, 10vh, 7rem)` to `clamp(3rem, 7vh, 5rem)`. No typography, grid, or
 program-row spacing changed.
+
+## Who We Serve spacing correction — 2026-07-20
+
+The gap between the final Who We Serve row and “Where we come from” was also
+slightly too long. Only the Story chapter's top clamp was tightened, from
+`clamp(4rem, 9vh, 6rem)` to `clamp(3rem, 7vh, 4.5rem)`. The audience rows,
+rules, typography, story layout, and all other spacing remain unchanged.

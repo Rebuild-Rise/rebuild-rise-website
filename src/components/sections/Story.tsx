@@ -4,7 +4,7 @@ import { story } from "@/content/siteContent";
 export function Story() {
   return (
     <section id="story" aria-labelledby="story-heading" className="bg-cream text-ink">
-      <Container className="pt-[clamp(4rem,9vh,6rem)] pb-[clamp(3rem,6vh,4rem)]">
+      <Container className="pt-[clamp(3rem,7vh,4.5rem)] pb-[clamp(3rem,6vh,4rem)]">
         <Reveal>
           <div className="grid gap-6 lg:grid-cols-12">
             <div className="lg:col-span-7">
