@@ -37,6 +37,8 @@ export default async function ContactPage({
       ? requestedPath
       : undefined;
   const formEndpoint = process.env.NEXT_PUBLIC_FORM_ENDPOINT;
+  const [correspondenceLocalPart, correspondenceDomain] =
+    contactPage.correspondence.email.split("@");
 
   return (
     <InteriorShell>
@@ -212,9 +214,10 @@ export default async function ContactPage({
             </p>
             <a
               href={`mailto:${contactPage.correspondence.email}`}
-              className="mt-3 inline-block break-all font-display text-[clamp(1.25rem,2vw,1.65rem)] font-medium text-cream underline decoration-olive underline-offset-4 hover:text-leaf"
+              className="mt-3 inline-block max-w-full font-display text-[clamp(1.25rem,2vw,1.65rem)] font-medium text-cream underline decoration-olive underline-offset-4 hover:text-leaf"
             >
-              {contactPage.correspondence.email}
+              {correspondenceLocalPart}@<wbr />
+              {correspondenceDomain}
             </a>
           </div>
         </div>
