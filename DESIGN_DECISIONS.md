@@ -1348,3 +1348,18 @@ Photographer/source credits and the explicit “not Rebuild & Rise fieldwork”
 stamps remain visible and linked where a source URL exists. Image alt text also
 remains intact. Caption rows now align the retained source credit cleanly to the
 right instead of reserving an empty descriptive column.
+
+## 2026-07-20 — D57 · Separate Volunteer Applications from General Inquiries
+
+Get Involved now includes a fifth participation route for volunteer applicants.
+Its action opens the organization-supplied Google Form in a new tab. The route
+states that an application does not confirm placement or create an employment
+relationship, and it does not imply that volunteer roles are currently open.
+
+The website's existing correspondence form remains the route for community and
+institutional partners, on-ground anchors, professional advisors, and pilot
+supporters. Formspree is configured through the existing
+`NEXT_PUBLIC_FORM_ENDPOINT` deployment variable; the public endpoint is not
+committed to source control. Volunteer applications are excluded from the
+general-inquiry dropdown so the two intake systems do not create duplicate
+application paths.

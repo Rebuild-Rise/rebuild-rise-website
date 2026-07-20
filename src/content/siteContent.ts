@@ -872,7 +872,7 @@ export const getInvolvedPage = {
   metadata: {
     title: "Get involved | Rebuild & Rise Humanitarian Initiative",
     description:
-      "Explore partnership, on-ground anchor, advisory, and pilot-support inquiries with Rebuild & Rise Humanitarian Initiative in Nigeria.",
+      "Explore volunteer, partnership, on-ground anchor, advisory, and pilot-support pathways with Rebuild & Rise Humanitarian Initiative in Nigeria.",
     canonical: "/get-involved",
     openGraphTitle: "Get involved with Rebuild & Rise",
   },
@@ -891,7 +891,7 @@ export const getInvolvedPage = {
     eyebrow: "Ways to participate",
     heading: "Choose the route that fits.",
     intro:
-      "Each route leads to one inquiry form. Select the closest fit so the team can understand why you are getting in touch.",
+      "Volunteer applicants continue to the dedicated application. Every other route leads to the inquiry form below.",
     fieldLabels: {
       suited: "Who this is for",
       contribution: "What you might contribute",
@@ -916,6 +916,19 @@ export const getInvolvedPage = {
         commitment: "We will be clear about the pilot’s stage and will not treat an inquiry as a confirmed role.",
         next: "If a relevant need develops, the team may contact you to learn more about your experience and local context.",
         cta: { label: "Express interest", href: "/get-involved?path=anchor#inquiry" },
+      },
+      {
+        value: "volunteer",
+        title: "Volunteer applicant",
+        suited: "People interested in contributing time, practical skills, professional experience, or reliable operational support.",
+        contribution: "Share your motivation, relevant experience, availability, location, and the kind of support you may be equipped to offer.",
+        commitment: "We will review applications against actual organizational needs, safeguarding responsibilities, and the current stage of Pilot 001.",
+        next: "Submitting an application does not confirm a volunteer placement or create an employment relationship.",
+        cta: {
+          label: "Open volunteer application",
+          href: "https://docs.google.com/forms/d/e/1FAIpQLSeFpbl2SsewFo6BopLof536XJFC_OCnRC9qlq585LLti7yngQ/viewform?pli=1",
+        },
+        external: true,
       },
       {
         value: "advisor",
