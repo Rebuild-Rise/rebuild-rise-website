@@ -757,8 +757,6 @@ export const modelPage = {
       image: "modelFollowMeasureSustain",
     },
   ],
-  photographyNote:
-    "These representative photographs provide context for a model still in design. They do not depict Pilot 001, Rebuild & Rise participants, or organizational impact. Credits and known locations appear with each image.",
   openQuestions: {
     eyebrow: "Open questions",
     heading: "What we are still learning",

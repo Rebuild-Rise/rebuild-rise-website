@@ -279,14 +279,6 @@ export default function ModelPage() {
         />
       ))}
 
-      <aside className="border-y border-olive/35 bg-forest">
-        <Container className="py-6 sm:py-7">
-          <p className="max-w-[96ch] font-mono text-[0.6875rem] leading-6 tracking-[0.08em] text-cream-muted">
-            {modelPage.photographyNote}
-          </p>
-        </Container>
-      </aside>
-
       <section
         className="bg-forest-deep"
         aria-labelledby="model-open-questions-heading"

@@ -423,12 +423,6 @@ representative-photography decision.
 **Sources:** ORG §5, §6D, and §7; SITE `model.steps`, `model.closing`, and
 `whereWeAre.measurement`; D38–D39 representative-photography decision.
 
-### Photography note
-
-`These representative photographs provide context for a model still in design. They do not depict Pilot 001, Rebuild & Rise participants, or organizational impact. Credits and known locations appear with each image.`
-
-**Source:** D38–D39 transparent-provenance requirement.
-
 ## Open questions
 
 - **Eyebrow:** `Open questions`
