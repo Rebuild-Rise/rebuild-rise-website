@@ -56,7 +56,7 @@ export default async function GetInvolvedPage({
             <SectionEyebrow theme="dark">
               {getInvolvedPage.intro.eyebrow}
             </SectionEyebrow>
-            <h1 className="rr-title-page mt-5 max-w-[17ch] font-display font-medium text-cream">
+            <h1 className="rr-title-page mt-5 max-w-[12ch] font-display font-medium text-cream">
               {getInvolvedPage.intro.heading}
             </h1>
             <p className="mt-8 max-w-[62ch] font-sans text-[clamp(1rem,1.7vw,1.2rem)] leading-[1.75] text-cream-muted">
