@@ -170,7 +170,7 @@ export const images: Record<string, SiteImage> = {
   modelListenPartner: {
     src: "/images/representative/model-assess-partner.jpg",
     alt: "Women speaking across a table while members of a seated team write during an outdoor community meeting",
-    place: "Public community-engagement meeting in Kaduna, Nigeria",
+    place: "",
     stamp: "mk_photoz / Pexels · not Rebuild & Rise fieldwork",
     width: 2625,
     height: 1750,
@@ -184,7 +184,7 @@ export const images: Record<string, SiteImage> = {
   modelTrainConnect: {
     src: "/images/representative/model-train-connect.jpg",
     alt: "Four men gathered around hand tools and equipment at a workshop bench",
-    place: "Men collaborating around a workshop bench in Kasese, Uganda",
+    place: "",
     stamp: "illustrate Digital Ug / Pexels · not Rebuild & Rise fieldwork",
     width: 5759,
     height: 3794,
@@ -198,7 +198,7 @@ export const images: Record<string, SiteImage> = {
   modelFollowMeasureSustain: {
     src: "/images/representative/model-follow-measure-sustain.jpg",
     alt: "A man in blue speaking at a table while a seated outdoor gathering listens beneath a canopy",
-    place: "A speaker addresses a seated outdoor gathering",
+    place: "",
     stamp: "Source supplied by Rebuild & Rise · not fieldwork",
     width: 3648,
     height: 3887,
@@ -210,7 +210,7 @@ export const images: Record<string, SiteImage> = {
   contactCorrespondence: {
     src: "/images/representative/contact-correspondence-richard-badejo.jpg",
     alt: "A man in a patterned cap and a close group of children look toward the camera",
-    place: "Representative photograph",
+    place: "",
     stamp: "Richard Badejo / Pexels · not Rebuild & Rise fieldwork",
     width: 3088,
     height: 2316,
@@ -954,8 +954,6 @@ export const getInvolvedPage = {
     intro:
       "Tell us which pathway fits and what you would like to explore. Please share only the information needed for this first conversation.",
     image: "contactCorrespondence",
-    imageProvenance:
-      "This licensed photograph is representative. It does not depict Rebuild & Rise activity, participants, or impact.",
     preparation: {
       eyebrow: "Before you write",
       heading: "A useful first note is simple.",

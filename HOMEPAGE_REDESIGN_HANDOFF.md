@@ -375,3 +375,10 @@ copy decision is unresolved. Live production-output review at 1440, 1024, 768,
 375, and 320 pixels confirms a stable three-line title, readable registration
 line, intact actions, clean archive handoff, and no visible horizontal overflow.
 Lint, TypeScript, diff checks, and the optimized production build pass.
+
+## Representative-photo caption simplification — 2026-07-20
+
+The three descriptive Model photo lines, the inquiry photograph's
+“Representative photograph” label, and its repeated explanatory disclaimer are
+removed. Source/photographer credits and “not Rebuild & Rise fieldwork” stamps
+remain visible, preserving provenance without the rejected caption copy.

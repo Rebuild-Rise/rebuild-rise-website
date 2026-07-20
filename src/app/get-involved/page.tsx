@@ -226,28 +226,22 @@ export default async function GetInvolvedPage({
                 className={`h-auto w-full ${inquiryImage.grade ? `rr-photo-grade--${inquiryImage.grade}` : ""}`}
               />
             </div>
-            <figcaption className="mt-3 grid gap-2 border-t border-line pt-3 sm:grid-cols-[1fr_auto] sm:gap-5">
-              <span className="font-sans text-sm font-medium text-ink">
-                {inquiryImage.place}
-              </span>
+            <figcaption className="mt-3 flex justify-end border-t border-line pt-3">
               {inquiryImage.sourceUrl ? (
                 <Link
                   href={inquiryImage.sourceUrl}
                   target="_blank"
                   rel="noreferrer"
-                  className="font-mono text-[0.6875rem] text-walnut underline decoration-line underline-offset-4 hover:text-forest sm:text-right"
+                  className="font-mono text-[0.6875rem] text-right text-walnut underline decoration-line underline-offset-4 hover:text-forest"
                 >
                   {inquiryImage.stamp}
                 </Link>
               ) : (
-                <span className="font-mono text-[0.6875rem] text-walnut sm:text-right">
+                <span className="font-mono text-[0.6875rem] text-right text-walnut">
                   {inquiryImage.stamp}
                 </span>
               )}
             </figcaption>
-            <p className="mt-4 max-w-[62ch] border-l border-walnut/50 pl-4 font-sans text-xs leading-[1.7] text-ink-muted">
-              {getInvolvedPage.form.imageProvenance}
-            </p>
           </figure>
 
           <div
