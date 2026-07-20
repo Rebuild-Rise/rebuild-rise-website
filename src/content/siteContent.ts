@@ -274,10 +274,10 @@ export const nav = {
 };
 
 export const hero = {
-  eyebrow: "Sustainable community development \u00B7 Nigeria",
-  headline: "We build what stays.",
+  eyebrow: "Registered with Nigeria’s Corporate Affairs Commission",
+  headline: "A Nigerian NGO building what stays.",
   subhead:
-    "Rebuild & Rise partners with displaced and underserved Nigerian communities to build health, education, and livelihood systems that outlast our presence.",
+    "Rebuild & Rise partners with displaced and underserved communities to strengthen health access, learning, livelihoods, and local capacity through systems designed to endure.",
   status: {
     label: "Current status",
     items: ["Registered in Nigeria", "Pilot 001 \u00B7 In design"],
