@@ -10,8 +10,8 @@ export function Interlude() {
       aria-labelledby="interlude-line"
       // Asymmetric padding (ledger D24): the top tightens toward the model —
       // which already closes with its soil line — so no dead cream band sits
-      // above the statement; the bottom keeps its generous drop into pillars.
-      className="bg-cream pb-[clamp(4rem,10vh,7rem)] pt-[clamp(3rem,7vh,5rem)] text-ink"
+      // above the statement; the bottom keeps a measured drop into pillars.
+      className="bg-cream pb-[clamp(3rem,7vh,5rem)] pt-[clamp(3rem,7vh,5rem)] text-ink"
     >
       <Container>
         <Reveal>
