@@ -1282,3 +1282,11 @@ existing tight section padding, typography, grid, and row rhythm. This removes
 roughly 32px from the combined desktop gap and 16px at narrow mobile widths,
 reconnecting the statement to the program content without collapsing the
 intended pause.
+
+## 2026-07-20 — D52 · Tighten Who-We-Serve-to-Story Handoff
+
+The Story chapter's top padding is reduced from `clamp(4rem, 9vh, 6rem)` to
+`clamp(3rem, 7vh, 4.5rem)`. Who We Serve keeps its heading, introduction,
+audience rows, rules, and tight section padding. The change removes roughly
+24px from the combined desktop gap and 16px at narrow mobile widths, preserving
+a clear chapter break without leaving an overlong cream field.
