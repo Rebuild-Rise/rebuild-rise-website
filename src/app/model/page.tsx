@@ -123,21 +123,18 @@ function MovementChapter({
           >
             {String(index + 1).padStart(2, "0")}
           </span>
-          <figcaption className="mt-3 grid gap-2 border-t border-walnut/30 pt-3 sm:grid-cols-[minmax(0,4fr)_minmax(0,6fr)] sm:gap-5">
-            <span className="min-w-0 text-[0.8125rem] font-medium leading-6 text-forest">
-              {movementImage.place}
-            </span>
+          <figcaption className="mt-3 flex justify-end border-t border-walnut/30 pt-3">
             {movementImage.sourceUrl ? (
               <a
                 href={movementImage.sourceUrl}
                 target="_blank"
                 rel="noreferrer"
-                className="min-w-0 font-mono text-[0.625rem] leading-5 tracking-[0.03em] text-ink-muted underline decoration-walnut/40 underline-offset-4 hover:text-forest sm:text-right"
+                className="min-w-0 font-mono text-[0.625rem] leading-5 tracking-[0.03em] text-ink-muted underline decoration-walnut/40 underline-offset-4 hover:text-forest text-right"
               >
                 {movementImage.stamp}
               </a>
             ) : (
-              <span className="min-w-0 font-mono text-[0.625rem] leading-5 tracking-[0.03em] text-ink-muted sm:text-right">
+              <span className="min-w-0 font-mono text-[0.625rem] leading-5 tracking-[0.03em] text-ink-muted text-right">
                 {movementImage.stamp}
               </span>
             )}

@@ -1336,3 +1336,15 @@ promise of outcomes.
 D55 supersedes only the D48 opening declaration copy and title measure. It
 preserves the documentary diptych, archive boundary, actions, narrative order,
 Model, later homepage sections, routes, and secondary pages.
+
+## 2026-07-20 — D56 · Simplify Representative-Photo Captions
+
+The descriptive location/subject lines beneath the three Model photographs and
+the inquiry photograph are removed, along with the inquiry image's repeated
+representative-photo disclaimer. These lines were visually heavy and repeated
+context already communicated by the surrounding page.
+
+Photographer/source credits and the explicit “not Rebuild & Rise fieldwork”
+stamps remain visible and linked where a source URL exists. Image alt text also
+remains intact. Caption rows now align the retained source credit cleanly to the
+right instead of reserving an empty descriptive column.
