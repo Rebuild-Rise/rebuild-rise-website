@@ -29,6 +29,10 @@ const processOffsets = [
   "lg:mt-24",
 ];
 
+const inquiryPathways = getInvolvedPage.pathways.entries.filter(
+  (pathway) => !("external" in pathway && pathway.external),
+);
+
 export default async function GetInvolvedPage({
   searchParams,
 }: {
@@ -37,7 +41,7 @@ export default async function GetInvolvedPage({
   const requestedPath = (await searchParams).path;
   const initialPath =
     typeof requestedPath === "string" &&
-    getInvolvedPage.pathways.entries.some(
+    inquiryPathways.some(
       (pathway) => pathway.value === requestedPath,
     )
       ? requestedPath
@@ -122,6 +126,8 @@ export default async function GetInvolvedPage({
                 </h3>
                 <Link
                   href={pathway.cta.href}
+                  target={"external" in pathway && pathway.external ? "_blank" : undefined}
+                  rel={"external" in pathway && pathway.external ? "noreferrer" : undefined}
                   className="mt-6 inline-flex items-center gap-2 font-sans text-sm font-medium text-forest underline decoration-olive underline-offset-4 hover:text-walnut"
                 >
                   {pathway.cta.label}
@@ -251,7 +257,7 @@ export default async function GetInvolvedPage({
             <InquiryForm
               key={initialPath ?? "unselected"}
               copy={getInvolvedPage.form}
-              pathways={getInvolvedPage.pathways.entries}
+              pathways={inquiryPathways}
               endpoint={formEndpoint}
               initialPath={initialPath}
               email={footer.email}

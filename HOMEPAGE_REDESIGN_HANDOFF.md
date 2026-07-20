@@ -382,3 +382,11 @@ The three descriptive Model photo lines, the inquiry photograph's
 “Representative photograph” label, and its repeated explanatory disclaimer are
 removed. Source/photographer credits and “not Rebuild & Rise fieldwork” stamps
 remain visible, preserving provenance without the rejected caption copy.
+
+## Volunteer and inquiry routing — 2026-07-20
+
+The completed Google Form is now the dedicated volunteer-application route from
+Get Involved. The existing website correspondence form remains reserved for
+partner, anchor, advisor, and pilot-support inquiries and is activated in Vercel
+through `NEXT_PUBLIC_FORM_ENDPOINT`. No endpoint value is stored in the
+repository.
