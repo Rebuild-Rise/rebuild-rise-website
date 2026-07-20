@@ -1210,3 +1210,47 @@ cadence between the subordinate frames. The mobile menu traps focus, closes on
 Escape, restores focus, and releases body scrolling. Lint, TypeScript, the
 optimized production build, public route checks, lab noindex/sitemap isolation,
 semantic checks, contrast checks, and a production transfer/loading review pass.
+
+## 2026-07-20 — D49 · Documentary Diptych and Present Hinge
+
+The co-founder rejected D48's archive composition. The three descending frames
+read as a decorative staircase rather than an authored documentary chapter: the
+strongest human photograph was demoted, the meals image became a small inventory
+thumbnail, the provenance sat below the visual evidence, and Current status
+looked appended to the far-right edge.
+
+The opening archive is now a natural-ratio documentary diptych. The women
+gathered beneath the tree lead at 3:4; the volunteer preparation scene follows
+at 4:3. A 9/16 desktop grid makes the two photographs resolve to one exact
+shared height without cropping, distortion, effects, text overlays, or fixed
+height. The visible numbering is removed because the photographs are records,
+not a verified event timeline. `archive-meals-prepared.jpg` remains in the
+approved archive and image manifest but is retired from the homepage.
+
+At desktop and tablet widths, the archive boundary is stated before the
+photographs: founders' prior relief work, Abuja 2022, and the explicit statement
+that the images do not depict Pilot 001 or current Rebuild & Rise impact. At
+narrow mobile widths, the archive rail leads directly into the photographs so
+human presence still begins inside the first 320px viewport; the same disclosure
+then follows the diptych before any present-day status. Screen-reader source
+order keeps the disclosure before the figures.
+
+Current status is no longer a small administrative rail beside old fieldwork. It
+occupies a short full-width root-green hinge after the archive, with Registered
+in Nigeria and Pilot 001 · In design as two open ruled facts. That color change
+makes the temporal boundary between the founders' 2022 record and the
+organization's present state unmistakable without adding a card, badge,
+illustration, or new claim.
+
+D49 supersedes D48's three-image staircase, numbered movement labels, and
+detached status column. It preserves D48's compact forest declaration, approved
+photographs and provenance, moderate thesis scale, static first paint, Story
+de-duplication, exact Model and JourneyPath, correspondence behavior, Human
+Bookend finale, routes, metadata, and secondary pages.
+
+**Verify:** live local review at 1440, 1280, 1024, 768, 720, 375, and 320 pixels
+records zero horizontal overflow. The two desktop images share a measured
+503px height at 1440/1280, 458px at 1024, and 337px at 768. At 320 the first
+human photograph begins at approximately 665px inside the 700px review
+viewport. Lint, TypeScript, the optimized production build, public-route checks,
+production-only styleguide 404s, and the security-header check pass.

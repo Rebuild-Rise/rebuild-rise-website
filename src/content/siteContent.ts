@@ -296,9 +296,8 @@ export const hero = {
       "These photographs record the founders’ prior relief work in Abuja in 2022. They do not depict Pilot 001 or current Rebuild & Rise impact.",
   },
   movements: [
-    { label: "Prepared", imageKey: "packingTeam" },
     { label: "Gathered", imageKey: "communityWomen" },
-    { label: "Meals prepared", imageKey: "mealsPrepared" },
+    { label: "Prepared", imageKey: "packingTeam" },
   ],
 };
 
