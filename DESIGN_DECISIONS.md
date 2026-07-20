@@ -1316,3 +1316,23 @@ to participate.
 The homepage participation-section heading remains unchanged; D54 applies only
 to the Get Involved interior-page H1. Its introduction, status rail, actions,
 pathways, form, metadata, and all claims remain unchanged.
+
+## 2026-07-20 — D55 · Registration-Led Homepage Introduction
+
+The homepage opening now introduces Rebuild & Rise as “A Nigerian NGO building
+what stays.” The eyebrow names the registering authority using the formal
+wording “Registered with Nigeria’s Corporate Affairs Commission.” This makes
+the organization's Nigerian legal standing visible within
+the first reading sequence instead of relying on a detached status band or
+secondary-page detail.
+
+The title measure expands from 8.5ch to 13ch on desktop and 12.5ch on mobile so
+the statement reads as a controlled editorial title rather than a tall
+stack of isolated words. Its scale remains within the established homepage
+range. The supporting sentence now describes the intended systems plainly and
+does not introduce impact figures, active-program claims, donor pressure, or a
+promise of outcomes.
+
+D55 supersedes only the D48 opening declaration copy and title measure. It
+preserves the documentary diptych, archive boundary, actions, narrative order,
+Model, later homepage sections, routes, and secondary pages.

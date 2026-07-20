@@ -353,3 +353,25 @@ The gap between the final Who We Serve row and “Where we come from” was also
 slightly too long. Only the Story chapter's top clamp was tightened, from
 `clamp(4rem, 9vh, 6rem)` to `clamp(3rem, 7vh, 4.5rem)`. The audience rows,
 rules, typography, story layout, and all other spacing remain unchanged.
+
+## Registration-led opening correction — 2026-07-20
+
+The homepage declaration now leads with organizational standing as well as
+philosophy: “A Nigerian NGO building what stays.” The eyebrow reads “Registered
+with Nigeria’s Corporate Affairs Commission,” making the registering authority
+visible in the first screen without bringing back the rejected Current status
+band.
+
+The supporting sentence remains future-facing and claim-safe. It describes the
+organization's intended areas of systems strengthening without implying that a
+pilot is active, reporting impact, or pressuring visitors to donate. The title
+measure is moderately wider to give the new statement an editorial rhythm
+comparable to the Model and Program Areas page introductions.
+
+### Current recommendation and unresolved decisions
+
+Keep the registration credential in the opening reading sequence. No further
+copy decision is unresolved. Live production-output review at 1440, 1024, 768,
+375, and 320 pixels confirms a stable three-line title, readable registration
+line, intact actions, clean archive handoff, and no visible horizontal overflow.
+Lint, TypeScript, diff checks, and the optimized production build pass.
