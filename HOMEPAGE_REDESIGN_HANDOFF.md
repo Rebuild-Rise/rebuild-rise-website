@@ -411,3 +411,9 @@ no horizontal overflow. The weakest early mobile state placed preparation
 guidance ahead of the form; this was corrected so the form follows its heading
 and introduction immediately. At 768 pixels the inquiry fields use the full
 available width, while the route index retains a readable editorial grid.
+
+### Contact email wrap correction — 2026-07-20
+
+The general-correspondence address now has one intentional mobile break point
+after the `@` symbol. Arbitrary character wrapping was removed so the `.ng`
+ending can no longer leave a single orphaned letter on narrow screens.
