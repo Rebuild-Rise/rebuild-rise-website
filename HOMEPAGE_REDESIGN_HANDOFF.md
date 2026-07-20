@@ -284,3 +284,40 @@ no unresolved homepage implementation choice. Future photography remains a
 separate acquisition decision: commission a consented Abuja listening/working
 series before replacing any approved archive frame. External candidates remain
 unapproved and representative-only.
+
+## Co-founder composition correction — 2026-07-20
+
+The D48 three-frame archive arrangement was rejected after launch. Its descending
+scale made the women gathered photograph secondary, reduced the meal-preparation
+frame to an inventory thumbnail, left the archive boundary visually detached,
+and made Current status look like an unrelated administrative appendage.
+
+The accepted correction is **Documentary Diptych and Present Hinge** (D49):
+
+- `communityWomen` now leads at its natural 3:4 ratio.
+- `packingTeam` follows at its natural 4:3 ratio.
+- A 9/16 desktop grid gives both photographs one exact shared height.
+- Visible timeline numbering is removed; the records no longer imply an exact
+  chronology that the archive does not need to prove.
+- `mealsPrepared` remains approved archive material but is retired from the
+  homepage.
+- The archive boundary is stated before the photographs on desktop/tablet and
+  immediately after the diptych on narrow mobile, before present status.
+- Current status is a short root-green, full-width temporal hinge with two open
+  ruled facts rather than a small side widget.
+- The forest declaration, canonical copy, Story de-duplication, Model,
+  JourneyPath, later homepage sections, routes, and secondary pages remain
+  unchanged.
+
+Review at 1440 / 1280 / 1024 / 768 / 720 / 375 / 320 records no horizontal
+overflow. The shared image baseline remains exact at every diptych width; the
+mobile stack preserves complete natural ratios; the first human photograph
+begins inside the 320px first viewport. Lint, TypeScript, production build,
+route isolation, and security headers pass.
+
+### Current recommendation and unresolved decisions
+
+The accepted public recommendation is now **Documentary Diptych and Present
+Hinge**. No implementation decision remains unresolved. A future commissioned
+Abuja listening/working series may replace approved archive frames only after
+separate image, consent, and provenance review.
