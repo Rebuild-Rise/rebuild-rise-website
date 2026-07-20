@@ -1363,3 +1363,24 @@ supporters. Formspree is configured through the existing
 committed to source control. Volunteer applications are excluded from the
 general-inquiry dropdown so the two intake systems do not create duplicate
 application paths.
+
+## 2026-07-20 — D58 · Make Contact a Form-Led Routing Page
+
+`/contact` is now a standalone page rather than a redirect into the closing
+portion of Get Involved. Its opening gives visitors three explicit routes:
+the external volunteer application, a structured website inquiry, and direct
+email for general correspondence. This separates applications from ordinary
+messages and makes the expected action legible before any personal information
+is requested.
+
+The Formspree-backed inquiry is the page's dominant working area. On desktop it
+occupies eight columns beside a four-column preparation rail; on mobile the
+form appears before that supporting guidance. The former representative image
+is not used, so the form no longer competes with unrelated photography. The
+Get Involved page remains the explanatory participation chapter and sends each
+non-volunteer pathway to the corresponding preselected Contact form state.
+
+D58 preserves the existing inquiry fields, validation, consent wording,
+Formspree endpoint configuration, email fallback, navigation, footer, and
+claim boundaries. It adds `/contact` to the sitemap and does not imply that a
+submission confirms a role, partnership, funding relationship, or response.

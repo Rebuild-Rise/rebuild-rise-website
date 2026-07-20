@@ -1,9 +1,9 @@
 "use client";
 
 import { useEffect, useId, useRef, useState } from "react";
-import type { getInvolvedPage } from "@/content/siteContent";
+import type { contactPage, getInvolvedPage } from "@/content/siteContent";
 
-type FormCopy = typeof getInvolvedPage.form;
+type FormCopy = typeof contactPage.form;
 type Pathway = (typeof getInvolvedPage.pathways.entries)[number];
 type FormStatus = "idle" | "submitting" | "success" | "error" | "validation";
 

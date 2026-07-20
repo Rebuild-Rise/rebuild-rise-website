@@ -390,3 +390,24 @@ Get Involved. The existing website correspondence form remains reserved for
 partner, anchor, advisor, and pilot-support inquiries and is activated in Vercel
 through `NEXT_PUBLIC_FORM_ENDPOINT`. No endpoint value is stored in the
 repository.
+
+## Standalone Contact page — 2026-07-20
+
+The inquiry system now has a dedicated, form-led `/contact` page. Its first
+decision is route selection: volunteer applicants use the approved Google
+Form, community and institutional partners, on-ground anchors, professional
+advisors, and pilot supporters use the native Formspree-backed inquiry, and
+general correspondence goes to `contact@rebuildandrise.ng`.
+
+The website form is the dominant eight-column desktop composition and appears
+before its supporting guidance on mobile. The unrelated representative image
+has been removed from this flow. Get Involved remains an explanatory page and
+links its pathways into preselected Contact form states. The public route is in
+the sitemap and the former `/contact` redirect has been retired.
+
+Production-output review at 1440, 1024, 768, 375, and 320 pixels confirms a
+clear opening, intact route index, correct query-based pathway selection, and
+no horizontal overflow. The weakest early mobile state placed preparation
+guidance ahead of the form; this was corrected so the form follows its heading
+and introduction immediately. At 768 pixels the inquiry fields use the full
+available width, while the route index retains a readable editorial grid.
