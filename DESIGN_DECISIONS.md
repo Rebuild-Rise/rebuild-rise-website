@@ -1290,3 +1290,16 @@ The Story chapter's top padding is reduced from `clamp(4rem, 9vh, 6rem)` to
 audience rows, rules, and tight section padding. The change removes roughly
 24px from the combined desktop gap and 16px at narrow mobile widths, preserving
 a clear chapter break without leaving an overlong cream field.
+
+## 2026-07-20 — D53 · Remove Model Photography Disclaimer Strip
+
+The full-width forest photography disclaimer between the final Model movement
+and Open Questions is removed. It repeated information already attached to each
+representative image and created an unnecessary interruption before the final
+chapter. Every figure retains its visible location, photographer/source link,
+and explicit “not Rebuild & Rise fieldwork” stamp, so provenance and the
+documentary boundary remain clear at the point where each image is encountered.
+
+D53 removes only the repeated strip and its unused content record. The Model
+movements, representative images, captions, credits, Open Questions, and all
+other page content remain unchanged.
