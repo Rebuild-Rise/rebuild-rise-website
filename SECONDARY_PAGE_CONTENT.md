@@ -685,7 +685,7 @@ representative-photography decision.
   `An inquiry starts a conversation. It does not confirm a role, partnership, advisory appointment, or funding relationship.`
 
 - **Primary CTA:** `Choose a pathway` → `#pathways`
-- **Secondary CTA:** `Email the team` → `mailto:admin@rebuildandrise.ng`
+- **Secondary CTA:** `Email the team` → `mailto:contact@rebuildandrise.ng`
 
 **Sources:** SITE `getInvolved` and `whereWeAre`; ORG §5 and §7; PLAN.
 
@@ -917,7 +917,7 @@ organizational relationship is assigned to anyone shown.
 
   `Privacy note: This form is delivered through Formspree. Submit only the information needed for this inquiry. Do not include medical information, details about children, home addresses, identity documents, financial account information, or other sensitive personal data. Attachments are not accepted.`
 
-- **Visible fallback:** `Prefer email? Write to admin@rebuildandrise.ng.`
+- **Visible fallback:** `Prefer email? Write to contact@rebuildandrise.ng.`
 - **Submit label:** `Send inquiry`
 - **Submitting label:** `Sending inquiry…`
 
@@ -931,7 +931,7 @@ organizational relationship is assigned to anyone shown.
 - **Network or provider error heading:** `Your inquiry was not sent.`
 - **Network or provider error message:**
 
-  `Your entries are still here. Please try again, or email admin@rebuildandrise.ng directly.`
+  `Your entries are still here. Please try again, or email contact@rebuildandrise.ng directly.`
 
 - **Missing endpoint eyebrow:** `Current inquiry route`
 - **Missing endpoint heading:** `Email is the way to reach us for now.`
@@ -940,7 +940,7 @@ organizational relationship is assigned to anyone shown.
   `Online inquiries have not been connected yet. Email the team and include the pathway that best describes you.`
 
 - **Visible address label:** `Write to`
-- **Visible address:** `admin@rebuildandrise.ng`
+- **Visible address:** `contact@rebuildandrise.ng`
 - **Missing endpoint CTA:** `Open email`
 - **Generic validation summary:** `Review the highlighted fields and try again.`
 

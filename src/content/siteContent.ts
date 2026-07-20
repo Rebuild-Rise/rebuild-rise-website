@@ -501,11 +501,11 @@ export const getInvolved = {
   ],
   primaryCta: {
     label: "Partner with Rebuild",
-    href: "mailto:admin@rebuildandrise.ng?subject=Partnership%20with%20Rebuild%20%26%20Rise",
+    href: "mailto:contact@rebuildandrise.ng?subject=Partnership%20with%20Rebuild%20%26%20Rise",
   },
   secondaryCta: {
     label: "Contact the team",
-    href: "mailto:admin@rebuildandrise.ng?subject=Rebuild%20%26%20Rise%20enquiry",
+    href: "mailto:contact@rebuildandrise.ng?subject=Rebuild%20%26%20Rise%20enquiry",
   },
 };
 
@@ -513,7 +513,7 @@ export const footer = {
   wordmark: "Rebuild & Rise Humanitarian Initiative",
   mission:
     "Building rooted pathways for underserved Nigerian communities through health, education, skills training, local partnership, and sustainable community capacity.",
-  email: "admin@rebuildandrise.ng",
+  email: "contact@rebuildandrise.ng",
   location: "Nigeria \u00B7 Diaspora founding team",
   legal: "Rebuild & Rise Humanitarian Initiative is registered in Nigeria.",
 };
@@ -886,7 +886,7 @@ export const getInvolvedPage = {
     qualification:
       "An inquiry starts a conversation. It does not confirm a role, partnership, advisory appointment, or funding relationship.",
     primaryCta: { label: "Choose a pathway", href: "#pathways" },
-    secondaryCta: { label: "Email the team", href: "mailto:admin@rebuildandrise.ng" },
+    secondaryCta: { label: "Email the team", href: "mailto:contact@rebuildandrise.ng" },
   },
   pathways: {
     id: "pathways",
@@ -988,12 +988,12 @@ export const getInvolvedPage = {
     },
     privacy:
       "Privacy note: This form is delivered through Formspree. Submit only the information needed for this inquiry. Do not include medical information, details about children, home addresses, identity documents, financial account information, or other sensitive personal data. Attachments are not accepted.",
-    fallback: "Prefer email? Write to admin@rebuildandrise.ng.",
+    fallback: "Prefer email? Write to contact@rebuildandrise.ng.",
     submitLabel: "Send inquiry",
     submittingLabel: "Sending inquiry…",
     states: {
       success: { heading: "Inquiry sent.", message: "Your inquiry was submitted successfully." },
-      error: { heading: "Your inquiry was not sent.", message: "Your entries are still here. Please try again, or email admin@rebuildandrise.ng directly." },
+      error: { heading: "Your inquiry was not sent.", message: "Your entries are still here. Please try again, or email contact@rebuildandrise.ng directly." },
       missing: {
         eyebrow: "Current inquiry route",
         heading: "Email is the way to reach us for now.",
