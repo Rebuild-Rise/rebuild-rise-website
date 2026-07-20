@@ -1303,3 +1303,16 @@ documentary boundary remain clear at the point where each image is encountered.
 D53 removes only the repeated strip and its unused content record. The Model
 movements, representative images, captions, credits, Open Questions, and all
 other page content remain unchanged.
+
+## 2026-07-20 — D54 · Reframe Get Involved Page Title
+
+The Get Involved page title changes from the long campaign-style sentence to
+“Help build what stays.” The shorter invitation is specific to Rebuild & Rise,
+echoes the organization's governing thesis, and now uses the same 12-character
+editorial measure as the Model page title. This prevents the shared page-title
+scale from becoming a three-line billboard while retaining a clear invitation
+to participate.
+
+The homepage participation-section heading remains unchanged; D54 applies only
+to the Get Involved interior-page H1. Its introduction, status rail, actions,
+pathways, form, metadata, and all claims remain unchanged.

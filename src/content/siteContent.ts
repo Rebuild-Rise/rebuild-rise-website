@@ -878,7 +878,7 @@ export const getInvolvedPage = {
   },
   intro: {
     eyebrow: "Get involved",
-    heading: "Help build the foundation for our first community pilots.",
+    heading: "Help build what stays.",
     body: "Rebuild & Rise is registered in Nigeria, and Pilot 001 is in design. We welcome early conversations with people and organizations whose local knowledge, professional judgment, or practical support could help us build carefully.",
     status: "Registered in Nigeria · Pilot 001 in design",
     qualification:

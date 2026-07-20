@@ -668,7 +668,7 @@ representative-photography decision.
 ## Opening — forest field
 
 - **Eyebrow:** `Get involved`
-- **H1:** `Help build the foundation for our first community pilots.`
+- **H1:** `Help build what stays.`
 - **Introduction:**
 
   `Rebuild & Rise is registered in Nigeria, and Pilot 001 is in design. We welcome early conversations with people and organizations whose local knowledge, professional judgment, or practical support could help us build carefully.`
