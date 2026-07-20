@@ -1273,3 +1273,12 @@ longer appears anywhere in the repository.
 D50 supersedes only D49's Present Hinge and the earlier correspondence address.
 It preserves the natural-ratio documentary diptych, archive boundary,
 provenance, copy, routes, form behavior, and all later homepage sections.
+
+## 2026-07-20 — D51 · Tighten Interlude-to-Pillars Handoff
+
+The typographic interlude's lower padding is reduced from
+`clamp(4rem, 10vh, 7rem)` to `clamp(3rem, 7vh, 5rem)`. Program Pillars keeps its
+existing tight section padding, typography, grid, and row rhythm. This removes
+roughly 32px from the combined desktop gap and 16px at narrow mobile widths,
+reconnecting the statement to the program content without collapsing the
+intended pause.
