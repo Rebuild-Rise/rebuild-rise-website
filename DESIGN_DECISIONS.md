@@ -597,7 +597,7 @@ The terminal arch narrows to 360px, the Path dot moves clear of the headline,
 and `terminal-door.webp` now completes the arrival between dot and invitation.
 The asset is registered as an illustration in the manifest. All site references
 to the old `.org` domain and email are replaced by `rebuildandrise.ng` and
-`admin@rebuildandrise.ng`. Production build and 1440/375 crops verified.
+`contact@rebuildandrise.ng`. Production build and 1440/375 crops verified.
 
 **Revert:** restore D25 Hero/Story/GetInvolved/JourneyPath geometry and the old
 manifest/layout values. **The homepage is re-frozen after D26.**
@@ -1092,7 +1092,7 @@ does not depict Rebuild & Rise activity, participants, or impact.
 
 When Formspree is not configured, the correspondence field no longer presents
 a technical absence as the section's focal point. It names email as the current
-route, displays `admin@rebuildandrise.ng` as readable text, and provides a
+route, displays `contact@rebuildandrise.ng` as readable text, and provides a
 direct email action. A three-part preparation ledger asks visitors to name the
 closest participation pathway, share only useful general context, and omit
 sensitive personal data. The same ledger remains available when the full form
@@ -1254,3 +1254,22 @@ records zero horizontal overflow. The two desktop images share a measured
 human photograph begins at approximately 665px inside the 700px review
 viewport. Lint, TypeScript, the optimized production build, public-route checks,
 production-only styleguide 404s, and the security-header check pass.
+
+## 2026-07-20 — D50 · Remove Homepage Status Hinge and Standardize Contact Email
+
+The co-founder rejected D49's full-width Current status band. It is removed
+from the public homepage rather than restyled. The archive diptych now closes
+directly into Who We Serve, eliminating an administrative interruption between
+the documentary opening and the human-centered narrative. The truthful
+Registered in Nigeria and Pilot 001 in-design statements remain available in
+the site's canonical secondary-page content; only this homepage repetition is
+removed.
+
+All public correspondence paths now use `contact@rebuildandrise.ng`, including
+mailto actions, footer/contact data, get-involved fallbacks, and inquiry-error
+guidance. Supporting content records are synchronized so the retired address no
+longer appears anywhere in the repository.
+
+D50 supersedes only D49's Present Hinge and the earlier correspondence address.
+It preserves the natural-ratio documentary diptych, archive boundary,
+provenance, copy, routes, form behavior, and all later homepage sections.

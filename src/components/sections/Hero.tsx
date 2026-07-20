@@ -128,28 +128,6 @@ export function Hero() {
             ))}
           </ol>
         </Container>
-
-        <aside
-          className="rr-record__status"
-          aria-labelledby="hero-status-label"
-        >
-          <Container className="rr-record__status-inner">
-            <p
-              id="hero-status-label"
-              className="font-mono text-[0.6875rem] uppercase tracking-[0.15em] text-leaf"
-            >
-              {hero.status.label}
-            </p>
-            <ul
-              aria-labelledby="hero-status-label"
-              className="rr-record__status-list"
-            >
-              {hero.status.items.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-          </Container>
-        </aside>
       </div>
     </section>
   );

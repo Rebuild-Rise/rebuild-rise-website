@@ -321,3 +321,20 @@ The accepted public recommendation is now **Documentary Diptych and Present
 Hinge**. No implementation decision remains unresolved. A future commissioned
 Abuja listening/working series may replace approved archive frames only after
 separate image, consent, and provenance review.
+
+## Co-founder status-band correction — 2026-07-20
+
+The full-width Current status band introduced in D49 was rejected and removed
+from the public homepage. The archive diptych now transitions directly into Who
+We Serve. Registered in Nigeria and Pilot 001's in-design status remain truthful
+canonical content elsewhere on the site; this change removes only the repeated
+homepage strip.
+
+All correspondence references now use `contact@rebuildandrise.ng`, including
+mail links, readable contact text, get-involved fallbacks, inquiry-error
+guidance, and supporting documentation.
+
+### Current recommendation and unresolved decisions
+
+The accepted public recommendation is **Documentary Diptych without the Present
+Hinge**. No implementation decision remains unresolved.
