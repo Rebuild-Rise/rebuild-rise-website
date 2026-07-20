@@ -414,6 +414,7 @@ available width, while the route index retains a readable editorial grid.
 
 ### Contact email wrap correction — 2026-07-20
 
-The general-correspondence address now has one intentional mobile break point
-after the `@` symbol. Arbitrary character wrapping was removed so the `.ng`
-ending can no longer leave a single orphaned letter on narrow screens.
+The general-correspondence address now uses a smaller sans-serif utility scale
+and remains on one line. The temporary break point after `@` was removed; the
+complete address reads as a single uninterrupted contact detail at narrow and
+wide viewports.
