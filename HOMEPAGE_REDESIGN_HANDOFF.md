@@ -424,3 +424,13 @@ wide viewports.
 The seven circular nodes in the Model page sequence rail are now offset left by
 half their 9px diameter. Each node's center therefore lands exactly on its grid
 boundary and vertical rule instead of sitting 4.5px to the right.
+
+### Model movement photo continuity — 2026-07-22
+
+The three movement photographs on the Model page now follow the same desktop
+sticky behavior as the About page's “Our principles” introduction. Each image
+holds at the shared `top-28` reading position while its corresponding movement
+copy and field notes scroll alongside it, then releases at the end of that
+movement chapter. The behavior begins at the large breakpoint only; tablet and
+mobile retain the original document flow so tall images do not obstruct the
+reading experience.

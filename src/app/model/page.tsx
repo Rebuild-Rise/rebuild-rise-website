@@ -91,7 +91,7 @@ function MovementChapter({
       <Container className="grid gap-10 py-[clamp(4rem,10vh,7.5rem)] lg:grid-cols-12 lg:items-start lg:gap-14">
         <figure
           className={cn(
-            "relative self-start lg:col-span-7",
+            "relative self-start lg:sticky lg:top-28 lg:col-span-7",
             isPortrait && "lg:max-w-[33rem]",
             imageOnRight && "lg:order-2",
             imageOnRight && isPortrait && "lg:justify-self-end",
