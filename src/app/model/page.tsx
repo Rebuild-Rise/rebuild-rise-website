@@ -51,7 +51,7 @@ function SequenceRail() {
           >
             <span
               aria-hidden="true"
-              className="absolute -top-[5px] left-0 h-[9px] w-[9px] rounded-full border border-walnut bg-parchment"
+              className="absolute -left-[4.5px] -top-[5px] h-[9px] w-[9px] rounded-full border border-walnut bg-parchment"
             />
             <p className="font-mono text-[0.6875rem] tracking-[0.12em] text-walnut">
               {String(index + 1).padStart(2, "0")}
