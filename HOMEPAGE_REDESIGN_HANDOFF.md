@@ -418,3 +418,9 @@ The general-correspondence address now uses a smaller sans-serif utility scale
 and remains on one line. The temporary break point after `@` was removed; the
 complete address reads as a single uninterrupted contact detail at narrow and
 wide viewports.
+
+### Model sequence node alignment — 2026-07-22
+
+The seven circular nodes in the Model page sequence rail are now offset left by
+half their 9px diameter. Each node's center therefore lands exactly on its grid
+boundary and vertical rule instead of sitting 4.5px to the right.
