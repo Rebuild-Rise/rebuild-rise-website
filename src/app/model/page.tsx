@@ -254,12 +254,12 @@ export default function ModelPage() {
                 <p className="mb-5 font-mono text-[0.6875rem] tracking-[0.12em] text-walnut sm:mb-0 sm:pt-1">
                   {String(index + 1).padStart(2, "0")}
                 </p>
-                <div className="grid gap-6 lg:grid-cols-[minmax(0,0.75fr)_2rem_minmax(0,1.25fr)] lg:items-start lg:gap-5">
+                <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_2rem_minmax(0,1fr)] lg:items-start lg:gap-5">
                   <div>
                     <p className="font-mono text-[0.625rem] uppercase tracking-[0.13em] text-walnut/80">
                       Field observation
                     </p>
-                    <blockquote className="mt-3 max-w-[28ch] font-display text-[clamp(1.125rem,1.6vw,1.45rem)] leading-snug text-walnut">
+                    <blockquote className="mt-2 max-w-[36ch] text-pretty font-display text-[clamp(1.125rem,1.6vw,1.45rem)] leading-[1.14] text-walnut">
                       {entry.quote}
                     </blockquote>
                   </div>

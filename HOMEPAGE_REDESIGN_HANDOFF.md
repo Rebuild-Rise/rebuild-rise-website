@@ -450,3 +450,7 @@ same causal order and without card containers.
 The side-by-side observation and lesson layout begins at the large breakpoint.
 At tablet widths the pair stacks vertically, preventing the lesson column from
 compressing beyond the viewport or creating tall rows of unused space.
+Observation quotes use tighter display leading, a closer label relationship,
+and pretty wrapping to avoid loose lines and isolated final words.
+At the large breakpoint, observation and lesson columns now share the available
+width evenly, and observation quotes may use up to 36 characters of measure.
