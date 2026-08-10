@@ -454,3 +454,6 @@ Observation quotes use tighter display leading, a closer label relationship,
 and pretty wrapping to avoid loose lines and isolated final words.
 At the large breakpoint, observation and lesson columns now share the available
 width evenly, and observation quotes may use up to 36 characters of measure.
+The chapter now uses a reduced lesson display scale, tighter row padding, and a
+shallower section inset so all three lessons read as one compact editorial
+ledger rather than three vertically extended panels.

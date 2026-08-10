@@ -231,7 +231,7 @@ export default function ModelPage() {
         className="bg-cream"
         aria-labelledby="model-lessons-heading"
       >
-        <Container className="grid gap-12 py-[clamp(4rem,10vh,7.5rem)] lg:grid-cols-12 lg:gap-14">
+        <Container className="grid gap-10 py-[clamp(3.5rem,7vh,5.5rem)] lg:grid-cols-12 lg:gap-14">
           <header className="lg:col-span-4">
             <SectionEyebrow>{modelPage.lessons.eyebrow}</SectionEyebrow>
             <h2
@@ -249,7 +249,7 @@ export default function ModelPage() {
             {modelPage.lessons.entries.map((entry, index) => (
               <article
                 key={entry.quote}
-                className="grid border-t border-walnut/30 py-8 last:border-b sm:grid-cols-[2.75rem_1fr] sm:gap-5 lg:py-10"
+                className="grid border-t border-walnut/30 py-6 last:border-b sm:grid-cols-[2.75rem_1fr] sm:gap-5 lg:py-7"
               >
                 <p className="mb-5 font-mono text-[0.6875rem] tracking-[0.12em] text-walnut sm:mb-0 sm:pt-1">
                   {String(index + 1).padStart(2, "0")}
@@ -277,10 +277,10 @@ export default function ModelPage() {
                     <p className="font-mono text-[0.625rem] uppercase tracking-[0.13em] text-forest">
                       Lesson {String(index + 1).padStart(2, "0")}
                     </p>
-                    <h3 className="mt-3 max-w-[20ch] font-display text-[clamp(1.9rem,2.8vw,2.75rem)] leading-[1.05] text-forest">
+                    <h3 className="mt-3 max-w-[22ch] font-display text-[clamp(1.75rem,2.1vw,2.25rem)] leading-[1.08] text-forest">
                       {entry.lesson}
                     </h3>
-                    <p className="mt-4 max-w-[45ch] text-[0.875rem] leading-6 text-ink-muted">
+                    <p className="mt-3 max-w-[45ch] text-[0.875rem] leading-6 text-ink-muted">
                       {entry.response}
                     </p>
                   </div>
