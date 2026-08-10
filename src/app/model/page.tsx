@@ -254,7 +254,7 @@ export default function ModelPage() {
                 <p className="mb-5 font-mono text-[0.6875rem] tracking-[0.12em] text-walnut sm:mb-0 sm:pt-1">
                   {String(index + 1).padStart(2, "0")}
                 </p>
-                <div className="grid gap-6 md:grid-cols-[minmax(0,0.75fr)_2rem_minmax(0,1.25fr)] md:items-start md:gap-5">
+                <div className="grid gap-6 lg:grid-cols-[minmax(0,0.75fr)_2rem_minmax(0,1.25fr)] lg:items-start lg:gap-5">
                   <div>
                     <p className="font-mono text-[0.625rem] uppercase tracking-[0.13em] text-walnut/80">
                       Field observation
@@ -266,14 +266,14 @@ export default function ModelPage() {
 
                   <div
                     aria-hidden="true"
-                    className="flex items-center gap-3 text-olive md:mt-7 md:block md:text-center"
+                    className="flex items-center gap-3 text-olive lg:mt-7 lg:block lg:text-center"
                   >
-                    <span className="h-px flex-1 bg-olive/45 md:hidden" />
-                    <span className="font-mono text-sm md:text-lg">→</span>
-                    <span className="h-px flex-1 bg-olive/45 md:hidden" />
+                    <span className="h-px flex-1 bg-olive/45 lg:hidden" />
+                    <span className="font-mono text-sm lg:text-lg">→</span>
+                    <span className="h-px flex-1 bg-olive/45 lg:hidden" />
                   </div>
 
-                  <div className="border-l-2 border-olive/60 pl-5 md:border-l md:pl-6">
+                  <div className="border-l-2 border-olive/60 pl-5 lg:border-l lg:pl-6">
                     <p className="font-mono text-[0.625rem] uppercase tracking-[0.13em] text-forest">
                       Lesson {String(index + 1).padStart(2, "0")}
                     </p>
