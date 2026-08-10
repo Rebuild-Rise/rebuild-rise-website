@@ -687,15 +687,18 @@ export const modelPage = {
     entries: [
       {
         quote: "“The supplies ran out in days.”",
-        response: "So practical learning should be tested as a way to strengthen capability after material support is gone.",
+        lesson: "Build capability that lasts.",
+        response: "Practical learning should strengthen capability after material support is gone.",
       },
       {
         quote: "“We left, and nothing of us stayed.”",
-        response: "So follow-up and locally defined roles should be tested as ways to support continuity after an external visit.",
+        lesson: "Put continuity in local hands.",
+        response: "Follow-up and locally defined roles should support continuity after an external visit.",
       },
       {
         quote: "“We couldn’t say what actually changed.”",
-        response: "So each pilot should define simple measures before delivery begins.",
+        lesson: "Define measures before delivery.",
+        response: "Simple measures should be defined before delivery begins.",
       },
     ],
   },

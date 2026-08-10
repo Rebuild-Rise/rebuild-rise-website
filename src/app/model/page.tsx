@@ -231,8 +231,8 @@ export default function ModelPage() {
         className="bg-cream"
         aria-labelledby="model-lessons-heading"
       >
-        <Container className="grid gap-12 py-[clamp(4rem,10vh,7.5rem)] lg:grid-cols-12 lg:gap-16">
-          <header className="lg:col-span-5">
+        <Container className="grid gap-12 py-[clamp(4rem,10vh,7.5rem)] lg:grid-cols-12 lg:gap-14">
+          <header className="lg:col-span-4">
             <SectionEyebrow>{modelPage.lessons.eyebrow}</SectionEyebrow>
             <h2
               id="model-lessons-heading"
@@ -245,22 +245,45 @@ export default function ModelPage() {
             </p>
           </header>
 
-          <div className="lg:col-span-7 lg:pt-2">
+          <div className="lg:col-span-8 lg:pt-2">
             {modelPage.lessons.entries.map((entry, index) => (
               <article
                 key={entry.quote}
-                className="grid grid-cols-[2.5rem_1fr] gap-4 border-t border-walnut/30 py-7 last:border-b"
+                className="grid border-t border-walnut/30 py-8 last:border-b sm:grid-cols-[2.75rem_1fr] sm:gap-5 lg:py-10"
               >
-                <p className="font-mono text-[0.6875rem] tracking-[0.12em] text-walnut">
+                <p className="mb-5 font-mono text-[0.6875rem] tracking-[0.12em] text-walnut sm:mb-0 sm:pt-1">
                   {String(index + 1).padStart(2, "0")}
                 </p>
-                <div>
-                  <blockquote className="rr-hquote font-display text-[clamp(1.6rem,3vw,2.4rem)] leading-[1.12] text-forest">
-                    {entry.quote}
-                  </blockquote>
-                  <p className="mt-4 max-w-[55ch] text-[0.875rem] leading-6 text-ink-muted">
-                    {entry.response}
-                  </p>
+                <div className="grid gap-6 md:grid-cols-[minmax(0,0.75fr)_2rem_minmax(0,1.25fr)] md:items-start md:gap-5">
+                  <div>
+                    <p className="font-mono text-[0.625rem] uppercase tracking-[0.13em] text-walnut/80">
+                      Field observation
+                    </p>
+                    <blockquote className="mt-3 max-w-[28ch] font-display text-[clamp(1.125rem,1.6vw,1.45rem)] leading-snug text-walnut">
+                      {entry.quote}
+                    </blockquote>
+                  </div>
+
+                  <div
+                    aria-hidden="true"
+                    className="flex items-center gap-3 text-olive md:mt-7 md:block md:text-center"
+                  >
+                    <span className="h-px flex-1 bg-olive/45 md:hidden" />
+                    <span className="font-mono text-sm md:text-lg">→</span>
+                    <span className="h-px flex-1 bg-olive/45 md:hidden" />
+                  </div>
+
+                  <div className="border-l-2 border-olive/60 pl-5 md:border-l md:pl-6">
+                    <p className="font-mono text-[0.625rem] uppercase tracking-[0.13em] text-forest">
+                      Lesson {String(index + 1).padStart(2, "0")}
+                    </p>
+                    <h3 className="mt-3 max-w-[20ch] font-display text-[clamp(1.9rem,2.8vw,2.75rem)] leading-[1.05] text-forest">
+                      {entry.lesson}
+                    </h3>
+                    <p className="mt-4 max-w-[45ch] text-[0.875rem] leading-6 text-ink-muted">
+                      {entry.response}
+                    </p>
+                  </div>
                 </div>
               </article>
             ))}

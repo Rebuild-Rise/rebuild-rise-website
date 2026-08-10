@@ -434,3 +434,15 @@ copy and field notes scroll alongside it, then releases at the end of that
 movement chapter. The behavior begins at the large breakpoint only; tablet and
 mobile retain the original document flow so tall images do not obstruct the
 reading experience.
+
+### Model lessons hierarchy — 2026-08-10
+
+The Model page's three field lessons now use an observation-to-lesson editorial
+sequence. The founders' quoted observations remain as honest evidence but are
+deliberately quieter; a directional transition leads to the lesson, which now
+uses a concise principle as the dominant typographic statement, followed by its
+precise explanation in supporting text. Forest color and an olive rule give the
+lesson side visual authority. This corrects the former hierarchy, which made
+the failures more memorable than the
+method they produced. On mobile, each relationship stacks vertically with the
+same causal order and without card containers.
