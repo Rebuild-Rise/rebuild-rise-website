@@ -446,3 +446,7 @@ lesson side visual authority. This corrects the former hierarchy, which made
 the failures more memorable than the
 method they produced. On mobile, each relationship stacks vertically with the
 same causal order and without card containers.
+
+The side-by-side observation and lesson layout begins at the large breakpoint.
+At tablet widths the pair stacks vertically, preventing the lesson column from
+compressing beyond the viewport or creating tall rows of unused space.
