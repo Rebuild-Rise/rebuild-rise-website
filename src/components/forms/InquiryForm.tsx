@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useId, useRef, useState } from "react";
+import { useRouter } from "next/navigation";
 import type { contactPage, getInvolvedPage } from "@/content/siteContent";
 
 type FormCopy = typeof contactPage.form;
@@ -13,6 +14,7 @@ interface InquiryFormProps {
   endpoint?: string;
   initialPath?: string;
   email: string;
+  successHref?: string;
 }
 
 interface FormValues {
@@ -35,7 +37,9 @@ export function InquiryForm({
   endpoint,
   initialPath,
   email,
+  successHref,
 }: InquiryFormProps) {
+  const router = useRouter();
   const id = useId();
   const formRef = useRef<HTMLFormElement>(null);
   const statusRef = useRef<HTMLDivElement>(null);
@@ -152,6 +156,7 @@ export function InquiryForm({
         message: "",
         website: "",
       });
+      if (successHref) router.push(successHref);
     } catch {
       setStatus("error");
     }
@@ -172,6 +177,7 @@ export function InquiryForm({
       method="POST"
       onSubmit={handleSubmit}
       noValidate
+      aria-busy={status === "submitting"}
       className="border-t border-line pt-7"
     >
       <div
@@ -188,6 +194,7 @@ export function InquiryForm({
         <div
           ref={statusRef}
           tabIndex={-1}
+          role={status === "error" ? "alert" : "status"}
           className={`mb-7 border-l-2 px-5 py-4 outline-none ${status === "success" ? "border-olive bg-parchment" : "border-walnut bg-cream"}`}
         >
           <h3 className="font-display text-xl font-medium text-ink">
@@ -204,7 +211,7 @@ export function InquiryForm({
       ) : null}
 
       {status === "validation" ? (
-        <p className="mb-6 border-l-2 border-walnut pl-4 font-sans text-sm font-medium text-walnut">
+        <p role="alert" className="mb-6 border-l-2 border-walnut pl-4 font-sans text-sm font-medium text-walnut">
           {copy.states.validation}
         </p>
       ) : null}
@@ -342,7 +349,14 @@ export function InquiryForm({
           disabled={status === "submitting"}
           className="inline-flex h-12 items-center justify-center rounded-[14px] bg-forest px-6 font-sans text-[0.9375rem] font-medium text-cream hover:bg-forest-deep disabled:cursor-wait disabled:opacity-60"
         >
-          {status === "submitting" ? copy.submittingLabel : copy.submitLabel}
+          {status === "submitting" ? (
+            <>
+              <span className="mr-2 h-4 w-4 animate-spin rounded-full border-2 border-cream/45 border-t-cream motion-reduce:animate-none" aria-hidden="true" />
+              {copy.submittingLabel}
+            </>
+          ) : (
+            copy.submitLabel
+          )}
         </button>
         <p className="font-sans text-sm text-ink-muted">
           {copy.fallback.split(email)[0]}

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { AmpText, Container } from "@/components/ui";
 import { FooterNav } from "@/components/navigation/FooterNav";
+import { PrivacySettingsButton } from "@/components/privacy/PrivacySettingsButton";
 import { footer } from "@/content/siteContent";
 
 export function Footer() {
@@ -29,9 +30,18 @@ export function Footer() {
             </p>
           </div>
         </div>
-        <p className="mt-10 border-t border-olive/30 pt-5 font-sans text-xs">
-          {footer.legal}
-        </p>
+        <div className="mt-10 flex flex-col gap-4 border-t border-olive/30 pt-5 sm:flex-row sm:items-center sm:justify-between">
+          <p className="font-sans text-xs">{footer.legal}</p>
+          <nav className="flex flex-wrap items-center gap-x-5 gap-y-2" aria-label="Legal and privacy navigation">
+            <Link href="/privacy" className="font-sans text-xs text-cream-muted hover:text-cream">
+              Privacy
+            </Link>
+            <Link href="/terms" className="font-sans text-xs text-cream-muted hover:text-cream">
+              Terms
+            </Link>
+            <PrivacySettingsButton />
+          </nav>
+        </div>
       </Container>
     </footer>
   );

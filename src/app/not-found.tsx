@@ -5,6 +5,7 @@ import { notFoundPage } from "@/content/siteContent";
 
 export const metadata: Metadata = {
   title: notFoundPage.metadataTitle,
+  description: notFoundPage.body,
   robots: { index: false, follow: false },
 };
 
