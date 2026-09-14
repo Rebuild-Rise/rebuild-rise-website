@@ -26,6 +26,7 @@ function ArchiveRecord({
           sizes={sizes}
           priority={priority}
           fetchPriority={priority ? "high" : "auto"}
+          loading={priority ? "eager" : "lazy"}
           className="rr-record__image block h-auto w-full"
         />
         <figcaption>
