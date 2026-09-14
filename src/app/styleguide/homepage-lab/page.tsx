@@ -30,6 +30,7 @@ import styles from "./page.module.css";
 
 export const metadata: Metadata = {
   title: "Homepage concept lab | Rebuild & Rise",
+  description: "Private comparison lab for Rebuild & Rise homepage concepts.",
   robots: { index: false, follow: false, nocache: true },
 };
 

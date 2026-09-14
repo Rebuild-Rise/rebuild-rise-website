@@ -36,7 +36,7 @@ export const fieldworkArchive = {
 
 export const images: Record<string, SiteImage> = {
   communityWomen: {
-    src: "/images/archive-community-women.jpg",
+    src: "/images/archive-community-women.webp",
     alt: "Women of an Abuja IDP camp community gathered beneath a tree, dressed in vivid patterned fabric",
     place: "Women gathered beneath a tree at an Abuja IDP camp",
     stamp: "Abuja · 2022 · founders’ prior relief work",
@@ -46,7 +46,7 @@ export const images: Record<string, SiteImage> = {
     consent: "confirmed",
   },
   groupTree01: {
-    src: "/images/archive-group-tree-01.jpg",
+    src: "/images/archive-group-tree-01.webp",
     alt: "Community members and volunteers gathered together under a large tree at an Abuja IDP camp",
     place: "Community & volunteers",
     stamp: "Abuja · 2022 · founders’ prior relief work",
@@ -56,7 +56,7 @@ export const images: Record<string, SiteImage> = {
     consent: "confirmed",
   },
   groupTree02: {
-    src: "/images/archive-group-tree-02.jpg",
+    src: "/images/archive-group-tree-02.webp",
     alt: "Wide view of families and volunteers standing beneath the tree canopy at the camp",
     place: "Community and volunteers beneath the tree canopy",
     stamp: "Abuja · 2022 · founders’ prior relief work",
@@ -66,7 +66,7 @@ export const images: Record<string, SiteImage> = {
     consent: "confirmed",
   },
   groupTree03: {
-    src: "/images/archive-group-tree-03.jpg",
+    src: "/images/archive-group-tree-03.webp",
     alt: "Children, families, and volunteers gathered at the camp beside a chalkboard",
     place: "Community and volunteers gathered beneath a tree",
     stamp: "Abuja · 2022 · founders’ prior relief work",
@@ -76,7 +76,7 @@ export const images: Record<string, SiteImage> = {
     consent: "confirmed",
   },
   packingTeam: {
-    src: "/images/archive-packing-team.jpg",
+    src: "/images/archive-packing-team.webp",
     alt: "Volunteers seated on wooden benches packing seasoning cubes and supplies into small bags",
     place: "Volunteer packing line",
     stamp: "Abuja · 2022 · founders’ prior relief work",
@@ -86,7 +86,7 @@ export const images: Record<string, SiteImage> = {
     consent: "confirmed",
   },
   packingWarmlight: {
-    src: "/images/archive-packing-warmlight.jpg",
+    src: "/images/archive-packing-warmlight.webp",
     alt: "Volunteers packing food supplies inside a camp structure in warm afternoon light",
     place: "Volunteer packing line",
     stamp: "Abuja · 2022 · founders’ prior relief work",
@@ -96,7 +96,7 @@ export const images: Record<string, SiteImage> = {
     consent: "confirmed",
   },
   volunteerPortrait: {
-    src: "/images/archive-volunteer-portrait.jpg",
+    src: "/images/archive-volunteer-portrait.webp",
     alt: "A volunteer and a young community member smiling together at the camp",
     place: "Friendship at the camp",
     stamp: "Abuja · 2022 · founders’ prior relief work",
@@ -106,7 +106,7 @@ export const images: Record<string, SiteImage> = {
     consent: "confirmed",
   },
   mealsPrepared: {
-    src: "/images/archive-meals-prepared.jpg",
+    src: "/images/archive-meals-prepared.webp",
     alt: "Rows of packed meal containers tied with napkins and spoons, prepared by volunteers",
     place: "Meals prepared for distribution",
     stamp: "Abuja · 2022 · founders’ prior relief work",
@@ -116,7 +116,7 @@ export const images: Record<string, SiteImage> = {
     consent: "confirmed",
   },
   campLandscape: {
-    src: "/images/archive-camp-landscape.jpg",
+    src: "/images/archive-camp-landscape.webp",
     alt: "Makeshift shelters and trees on open ground at an informal IDP settlement in Abuja",
     place: "Informal settlement",
     stamp: "Abuja · 2022 · founders’ prior relief work",
@@ -126,7 +126,7 @@ export const images: Record<string, SiteImage> = {
     consent: "confirmed",
   },
   textureContainers: {
-    src: "/images/texture-containers-duotone.jpg",
+    src: "/images/texture-containers-duotone.webp",
     alt: "",
     place: "",
     stamp: "",
@@ -136,7 +136,7 @@ export const images: Record<string, SiteImage> = {
     consent: "confirmed",
   },
   textureMeals: {
-    src: "/images/texture-meals-duotone.jpg",
+    src: "/images/texture-meals-duotone.webp",
     alt: "",
     place: "",
     stamp: "",
@@ -148,7 +148,7 @@ export const images: Record<string, SiteImage> = {
   // The site's first live-grade images. Their full-color grade is meant to
   // read differently from the archive duotoning — do not unify the look.
   founderAisha: {
-    src: "/images/live-headshot-aisha.jpg",
+    src: "/images/live-headshot-aisha.webp",
     alt: "Portrait of Aisha Adamu, co-founder and CEO of Rebuild & Rise",
     place: "",
     stamp: "",
@@ -158,7 +158,7 @@ export const images: Record<string, SiteImage> = {
     consent: "confirmed",
   },
   founderSalim: {
-    src: "/images/live-headshot-salim.jpg",
+    src: "/images/live-headshot-salim.webp",
     alt: "Portrait of Salim Salim, co-founder and CTO of Rebuild & Rise",
     place: "",
     stamp: "",
@@ -168,12 +168,12 @@ export const images: Record<string, SiteImage> = {
     consent: "confirmed",
   },
   modelListenPartner: {
-    src: "/images/representative/model-assess-partner.jpg",
+    src: "/images/representative/model-assess-partner.webp",
     alt: "Women speaking across a table while members of a seated team write during an outdoor community meeting",
     place: "",
     stamp: "mk_photoz / Pexels · not Rebuild & Rise fieldwork",
-    width: 2625,
-    height: 1750,
+    width: 2400,
+    height: 1600,
     treatment: "representative",
     consent: "licensed",
     sourceUrl:
@@ -182,12 +182,12 @@ export const images: Record<string, SiteImage> = {
     layout: "landscape",
   },
   modelTrainConnect: {
-    src: "/images/representative/model-train-connect.jpg",
+    src: "/images/representative/model-train-connect.webp",
     alt: "Four men gathered around hand tools and equipment at a workshop bench",
     place: "",
     stamp: "illustrate Digital Ug / Pexels · not Rebuild & Rise fieldwork",
-    width: 5759,
-    height: 3794,
+    width: 2400,
+    height: 1581,
     treatment: "representative",
     consent: "licensed",
     sourceUrl:
@@ -196,24 +196,24 @@ export const images: Record<string, SiteImage> = {
     layout: "landscape",
   },
   modelFollowMeasureSustain: {
-    src: "/images/representative/model-follow-measure-sustain.jpg",
+    src: "/images/representative/model-follow-measure-sustain.webp",
     alt: "A man in blue speaking at a table while a seated outdoor gathering listens beneath a canopy",
     place: "",
     stamp: "Source supplied by Rebuild & Rise · not fieldwork",
-    width: 3648,
-    height: 3887,
+    width: 2252,
+    height: 2400,
     treatment: "representative",
     consent: "user-supplied",
     grade: "gathering",
     layout: "portrait",
   },
   contactCorrespondence: {
-    src: "/images/representative/contact-correspondence-richard-badejo.jpg",
+    src: "/images/representative/contact-correspondence-richard-badejo.webp",
     alt: "A man in a patterned cap and a close group of children look toward the camera",
     place: "",
     stamp: "Richard Badejo / Pexels · not Rebuild & Rise fieldwork",
-    width: 3088,
-    height: 2316,
+    width: 2400,
+    height: 1800,
     treatment: "representative",
     consent: "licensed",
     sourceUrl:
@@ -464,13 +464,13 @@ export const whereWeAre = {
       name: "Aisha Adamu",
       role: "Co-founder & CEO",
       bio: "Psychology and neuroscience student at the University of Toronto, researching the Almajiri education system as a Laidlaw Scholar. She leads community relationships, partnerships, and on-ground judgment, work she began at fifteen.",
-      headshot: "/images/live-headshot-aisha.jpg",
+      headshot: "/images/live-headshot-aisha.webp",
     },
     {
       name: "Salim Salim",
       role: "Co-founder & CTO",
       bio: "Human Development student at Howard University working across research, program strategy, and community-centered technology. He leads systems, operations, and everything technical, including this site.",
-      headshot: "/images/live-headshot-salim.jpg",
+      headshot: "/images/live-headshot-salim.webp",
     },
   ],
   registrationLine: "Rebuild & Rise Humanitarian Initiative is registered in Nigeria.",
@@ -1097,4 +1097,165 @@ export const notFoundPage = {
   body: "The address may be incomplete, or the page may have moved. Return to the homepage or contact the Rebuild & Rise team.",
   primaryCta: { label: "Return home", href: "/" },
   secondaryCta: { label: "Contact the team", href: "/contact" },
+};
+
+export const privacyPage = {
+  metadata: {
+    title: "Privacy notice | Rebuild & Rise Humanitarian Initiative",
+    description:
+      "How Rebuild & Rise handles website inquiries, volunteer applications, analytics choices, and personal information.",
+    canonical: "/privacy",
+  },
+  eyebrow: "Privacy notice",
+  heading: "Privacy should be clear before information is shared.",
+  effectiveDate: "Effective 14 September 2026",
+  introduction:
+    "This notice explains how Rebuild & Rise Humanitarian Initiative handles personal information submitted through this website. Rebuild & Rise is registered in Nigeria and can be contacted at contact@rebuildandrise.ng.",
+  sections: [
+    {
+      heading: "Information we receive",
+      paragraphs: [
+        "The structured inquiry form asks for your name, email address, participation pathway, message, and—only if you choose to provide them—your general city or country and organization.",
+        "The separate volunteer application is hosted in Google Forms and may request additional information relevant to volunteer screening. Review that form before submitting and provide only what is requested.",
+      ],
+    },
+    {
+      heading: "How we use it",
+      paragraphs: [
+        "We use inquiry and application information to review your message, respond where appropriate, assess possible fit, protect the integrity and safety of our work, and keep an accountable record of the conversation.",
+        "Submitting an inquiry or application does not create a volunteer, employment, advisory, partnership, beneficiary, or funding relationship.",
+      ],
+    },
+    {
+      heading: "Sensitive information and children",
+      paragraphs: [
+        "Do not submit medical details, information about children, identity documents, financial account information, home addresses, or other sensitive personal data through the website inquiry form.",
+        "The website inquiry form is not intended for children. A parent, guardian, or responsible adult should contact the organization when an inquiry concerns a child, and should still avoid including sensitive details in an initial message.",
+      ],
+    },
+    {
+      heading: "Service providers and international processing",
+      paragraphs: [
+        "Formspree delivers structured website inquiries. Google provides the volunteer application and related response tools. Vercel hosts the website and provides optional privacy-focused analytics. These providers process information under their own terms and privacy practices and may process it in countries where they operate.",
+        "We do not sell personal information and do not use website inquiry data for advertising.",
+      ],
+    },
+    {
+      heading: "Analytics and device storage",
+      paragraphs: [
+        "Anonymous Vercel Web Analytics is optional and is loaded only after you select ‘Accept analytics.’ It records aggregate page-visit information and does not receive the contents of inquiry or volunteer forms. Rebuild & Rise does not use advertising cookies on this website.",
+        "Your analytics choice is stored in your browser so the site can remember it. You can reopen Privacy choices in the footer at any time, or clear the site data in your browser.",
+      ],
+    },
+    {
+      heading: "Retention and security",
+      paragraphs: [
+        "We keep personal information only for as long as reasonably needed for the purpose for which it was collected, responsible organizational record-keeping, safety, dispute prevention, or a legal obligation. Information that is no longer needed should be deleted or anonymized.",
+        "We use reasonable organizational and technical safeguards, but no internet transmission or storage system can be guaranteed completely secure. Email and web forms should therefore contain only the information needed for a first conversation.",
+      ],
+    },
+    {
+      heading: "Your choices and rights",
+      paragraphs: [
+        "Subject to applicable law, you may ask whether we hold personal information about you and request access, correction, deletion, restriction, or objection to certain processing. You may also withdraw consent where consent is the basis for processing.",
+        "Send privacy requests to contact@rebuildandrise.ng. We may need to verify the request before acting. You may also raise a concern with the Nigeria Data Protection Commission.",
+      ],
+    },
+    {
+      heading: "Changes to this notice",
+      paragraphs: [
+        "We may update this notice when the website, our processes, or legal requirements change. The effective date above will be revised when a material update is published.",
+      ],
+    },
+  ],
+};
+
+export const termsPage = {
+  metadata: {
+    title: "Website terms | Rebuild & Rise Humanitarian Initiative",
+    description:
+      "Terms for using the Rebuild & Rise website, inquiry form, volunteer application, and published materials.",
+    canonical: "/terms",
+  },
+  eyebrow: "Website terms",
+  heading: "Use this website with the same care the work requires.",
+  effectiveDate: "Effective 14 September 2026",
+  introduction:
+    "These terms govern use of rebuildandrise.ng, which is operated by Rebuild & Rise Humanitarian Initiative, an organization registered in Nigeria. By using the site, you agree to use it lawfully and responsibly.",
+  sections: [
+    {
+      heading: "The website’s purpose",
+      paragraphs: [
+        "This website explains Rebuild & Rise’s purpose, working model, areas of intended future work, origin record, and ways to contact the team. Pilot 001 is in design. Program-area descriptions are not claims that services are currently being delivered or that outcomes have been achieved.",
+      ],
+    },
+    {
+      heading: "No professional or emergency service",
+      paragraphs: [
+        "Website content is general information. It is not medical, legal, financial, safeguarding, counselling, crisis, or other professional advice, and the website is not an emergency-response channel.",
+        "If a person faces immediate danger or needs urgent professional support, contact the appropriate local emergency service, licensed provider, or responsible authority rather than relying on this website or its inquiry form.",
+      ],
+    },
+    {
+      heading: "Inquiries and applications",
+      paragraphs: [
+        "An inquiry, volunteer application, or email starts a review or conversation only. It does not confirm a role, create employment, establish a partnership or advisory appointment, promise a response, or create a funding relationship.",
+        "You are responsible for ensuring that the information you submit is accurate, lawful to share, and limited to what is necessary. Do not submit confidential third-party information or sensitive details about children or vulnerable people through the website.",
+      ],
+    },
+    {
+      heading: "Donations and tax status",
+      paragraphs: [
+        "This website does not currently process donations. References to supporters or pilot funding are invitations to discuss responsible support, not a fundraising transaction, tax statement, or promise that a contribution will be deductible in any jurisdiction.",
+      ],
+    },
+    {
+      heading: "Documentary and representative images",
+      paragraphs: [
+        "Archive photographs are identified as records of the founders’ prior relief work and are not evidence of current Rebuild & Rise programs or impact. Representative photographs provide context only and do not depict Rebuild & Rise activity, participants, or outcomes.",
+        "You may not remove credits, misrepresent an image’s context, or reuse photographs, artwork, logos, or written material in a misleading or unlawful way.",
+      ],
+    },
+    {
+      heading: "Acceptable use",
+      paragraphs: [
+        "Do not interfere with the site, attempt unauthorized access, submit malicious code, impersonate another person, scrape personal information, send spam, or use the site to exploit, endanger, harass, or misrepresent any person or community.",
+      ],
+    },
+    {
+      heading: "External services and links",
+      paragraphs: [
+        "The site links to services operated by others, including Formspree and Google Forms. Rebuild & Rise does not control every external service and is not responsible for its availability, content, or independent privacy practices. Review an external service before using it.",
+      ],
+    },
+    {
+      heading: "Accuracy and availability",
+      paragraphs: [
+        "We aim to keep published information accurate and truthful, but plans, people, processes, and website availability may change. We may correct, update, suspend, or remove content where necessary. Nothing on the site is a guarantee of a particular program, response, partnership, funding result, or outcome.",
+      ],
+    },
+    {
+      heading: "Responsibility and applicable law",
+      paragraphs: [
+        "To the extent permitted by applicable law, the site is provided without guarantees beyond those that cannot lawfully be excluded. Rebuild & Rise is not responsible for indirect loss arising solely from reliance on general website information or from services controlled by third parties.",
+        "These terms are governed by the laws of the Federal Republic of Nigeria. Questions about these terms may be sent to contact@rebuildandrise.ng.",
+      ],
+    },
+  ],
+};
+
+export const thankYouPage = {
+  metadataTitle: "Inquiry received | Rebuild & Rise",
+  eyebrow: "Inquiry received",
+  heading: "Thank you for starting the conversation.",
+  body:
+    "Your inquiry reached the Rebuild & Rise team. We will review it against the organization’s current stage, priorities, and responsibilities. A submission does not confirm a role or partnership.",
+  nextEyebrow: "What happens next",
+  nextSteps: [
+    "The team reviews the pathway and context you provided.",
+    "If there is a relevant fit, we may reply with focused questions or a proposed conversation.",
+    "No further personal or sensitive information is needed unless the team explains why and how it will be handled.",
+  ],
+  primaryCta: { label: "Return home", href: "/" },
+  secondaryCta: { label: "Explore our model", href: "/model" },
 };

@@ -188,6 +188,7 @@ export default async function ContactPage({
               endpoint={formEndpoint}
               initialPath={initialPath}
               email={footer.email}
+              successHref="/contact/thank-you"
             />
           </div>
         </div>

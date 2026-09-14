@@ -21,6 +21,7 @@ import {
 
 export const metadata: Metadata = {
   title: "Internal styleguide | Rebuild & Rise",
+  description: "Private component and visual-system reference for Rebuild & Rise.",
   robots: { index: false, follow: false },
 };
 
